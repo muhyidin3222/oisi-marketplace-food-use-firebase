@@ -1,0 +1,154 @@
+[
+    {
+        "id": 1,
+        "img": "assets/img/categori/product1.png",
+        "hot": true,
+        "price": "Rp 27.000",
+        "discount": "Rp 30.000",
+        "name": "Egg Chicken Roll",
+        "href": "/singel_product",
+        "per": "Pcs",
+        "dec": "",
+        "total": null
+    },
+    {
+        "id": 2,
+        "img": "assets/img/categori/product1.png",
+        "hot": false,
+        "price": "Rp 28.000",
+        "discount": "Rp 31.000",
+        "name": "Cumi Roll",
+        "href": "/singel_product",
+        "per": "Pcs"
+    },
+    {
+        "id": 3,
+        "img": "assets/img/categori/product1.png",
+        "hot": true,
+        "price": "Rp 28.000",
+        "discount": "Rp 31.000",
+        "name": "Shrimp Roll",
+        "href": "/singel_product",
+        "per": "Pcs"
+    },
+    {
+        "id": 4,
+        "img": "assets/img/categori/product1.png",
+        "hot": true,
+        "price": "Rp 27.000",
+        "discount": "Rp 30.000",
+        "name": "Spicy Chicken",
+        "href": "/singel_product",
+        "per": "Pcs"
+    },
+    {
+        "id": 5,
+        "img": "assets/img/categori/product1.png",
+        "hot": true,
+        "price": "Rp 36.500",
+        "discount": "Rp 39.500",
+        "name": "Egg Kado",
+        "href": "/singel_product",
+        "per": "Pcs"
+    },
+    {
+        "id": 6,
+        "img": "assets/img/categori/product1.png",
+        "hot": false,
+        "price": "Rp 27.250",
+        "discount": "Rp 30.250",
+        "name": "Lumpia Rajungan",
+        "href": "/singel_product",
+        "per": "Pcs"
+    },
+    {
+        "id": 7,
+        "img": "assets/img/categori/product1.png",
+        "hot": false,
+        "price": "Rp 37.250",
+        "discount": "Rp 40.250",
+        "name": "Chicken Teba",
+        "href": "/singel_product",
+        "per": "Pcs"
+    },
+    {
+        "id": 8,
+        "img": "assets/img/categori/product1.png",
+        "hot": false,
+        "price": "Rp 53.500",
+        "discount": "Rp 56.500",
+        "name": "Chicken Katsu",
+        "href": "/singel_product",
+        "per": "Pcs"
+    },
+    {
+        "id": 9,
+        "img": "assets/img/categori/product1.png",
+        "hot": false,
+        "price": "Rp 68.500",
+        "discount": "Rp 71.500",
+        "name": "Chicken Karage",
+        "per": "Gram",
+        "href": "/"
+    },
+    {
+        "id": 10,
+        "img": "assets/img/categori/product1.png",
+        "hot": false,
+        "price": "Rp 98.500",
+        "discount": "Rp 101.500",
+        "name": "Chicken Teriyaki",
+        "per": "Gram",
+        "href": "/"
+    },
+    {
+        "id": 11,
+        "img": "assets/img/categori/product1.png",
+        "hot": false,
+        "price": "Rp 123.500",
+        "discount": "Rp 126.500",
+        "name": "Beef Teriyaki",
+        "per": "Gram",
+        "href": "/"
+    },
+    {
+        "id": 12,
+        "img": "assets/img/categori/product1.png",
+        "hot": false,
+        "price": "Rp blm ada harganya",
+        "discount": "Rp 101.500",
+        "name": "Ebifuray",
+        "per": "Gram",
+        "href": "/"
+    },
+    {
+        "id": 13,
+        "img": "assets/img/categori/product1.png",
+        "hot": false,
+        "price": "Rp 68.500",
+        "discount": "Rp 71.500",
+        "name": "Acar",
+        "per": "Gram",
+        "href": "/"
+    },
+    {
+        "id": 14,
+        "img": "assets/img/categori/product1.png",
+        "hot": false,
+        "price": "Rp gak ada harga",
+        "discount": "Rp 71.500",
+        "name": "Frozen Potatoes",
+        "per": "Gram",
+        "href": "/"
+    },
+    {
+        "id": 15,
+        "img": "assets/img/categori/product1.png",
+        "hot": false,
+        "price": "Rp 108.500",
+        "discount": "Rp 111.500",
+        "name": "Mayones",
+        "per": "Gram",
+        "href": "/"
+    }
+]

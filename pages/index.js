@@ -1,209 +1,207 @@
-import Head from 'next/head'
+import React from 'react'
+import Layout from '../components/layout'
+import Link from 'next/link'
+import Roles from '../components/roles'
+import Step from '../components/step'
 
-export default function Home() {
+// import dynamic from 'next/dynamic';
+
+// const DynamicComponentWithCustomLoading = dynamic(() => import('./about'), {
+//   loading: () => <div id="preloader-active">
+//     <div className="preloader d-flex align-items-center justify-content-center">
+//       <div className="preloader-inner position-relative">
+//         <div className="preloader-circle"></div>
+//         <div className="preloader-img pere-text">
+//           <img src="/assets/img/logo/logo.png" alt="" />
+//         </div>
+//       </div>
+//     </div>
+//   </div>
+// });
+
+export default function index() {
   return (
-    <div className="container">
-      <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-
+    <Layout>
       <main>
-        <h1 className="title">
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
-
-        <p className="description">
-          Get started by editing <code>pages/index.js</code>
-        </p>
-
-        <div className="grid">
-          <a href="https://nextjs.org/docs" className="card">
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className="card">
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/zeit/next.js/tree/master/examples"
-            className="card"
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className="card"
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
+        {/* <DynamicComponentWithCustomLoading /> */}
+        <div className="slider-area ">
+          <div className="slider-active">
+            <div className="single-slider slider-height" data-background="assets/img/hero/h1_hero.jpg">
+              <div className="container">
+                <div className="row d-flex align-items-center justify-content-between">
+                  <div className="col-xl-6 col-lg-6 col-md-6 col-sm-6 d-none d-md-block">
+                    <div className="hero__img" data-animation="bounceIn" data-delay=".4s">
+                      <img src="/assets/img/hero/hero_man.jpg" alt="" style={{ maxWidth: 600, maxHeight: 600 }} />
+                    </div>
+                  </div>
+                  <div className="col-xl-5 col-lg-5 col-md-5 col-sm-8">
+                    <div className="hero__caption">
+                      <span data-animation="fadeInRight" data-delay=".4s">Tinggal Goreng ....</span>
+                      <h1 data-animation="fadeInRight" data-delay=".6s">oisi Food</h1>
+                      <p data-animation="fadeInRight" data-delay=".8s">Lauk Jepang, instan, lezatnya tak terkalahkan</p>
+                      <div className="hero__btn" data-animation="fadeInRight" data-delay="1s">
+                        <Link href="/catagori">
+                          <a className="btn hero-btn">Beli Sekarang</a>
+                        </Link>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+
+        <div className="slider-area" style={{ marginBottom: 140 }}>
+          <div className="slider-active">
+            <div className="container">
+              <h1 className="text-manfaat">Apa itu Oisi?</h1>
+              <div className="row d-flex align-items-center justify-content-between">
+                <div className="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                  <div className="manfaat hero__caption">
+                    <li>Oisi food adalah makanan instan yang dibuat dari daging-2 yang halal, diolah sedemikian rupa menjadi makaanan instan yang siap untuk digoreng kapanpun, ada banyak variasi dari oisi
+                    <Link href="/catagori">
+                        <a style={{ marginLeft: 10, color: '#50ed45' }}>Lihat Detail</a>
+                      </Link> </li>
+                    <li>koki udah berpengalaman 10 tahun lebih, jadi jangang ragukan rasanya</li>
+                    <li>Dijamin halal</li>
+                    <li>Menerima Orderan diarea jakarta, karena makanan tidak tahan diluar suhu dingin</li>
+                    <li>Makanan wajib difreezer untuk menjaga makanan tetap fresh</li>
+                    <li>Pengiriman lewat go send atau Grab, supaya makanan tidak terlalu lama diluar suhu dingin</li>
+
+                    <div className="hero__btn" data-animation="fadeInRight" data-delay="1s">
+                      <Link href="/catagori">
+                        <a className="btn hero-btn">Beli Sekarang</a>
+                      </Link>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="slider-area">
+          <div className="slider-active">
+            <div className="single-slider slider-height">
+              <div className="container">
+                <h1 className="text-manfaat">Apa Kelebihan dari Oisi food ?</h1>
+                <div className="row d-flex align-items-center justify-content-between">
+                  <div className="col-xl-5 col-lg-5 col-md-5 col-sm-8">
+                    <div className="manfaat hero__caption">
+                      <li>Rasanya sangat lezat, Tidak bisa Dibandingkan dengan yang lain</li>
+                      <li>"simpel Tinggal goreng", tidak usah repot cari lauk, apa lagi membuat!</li>
+                      <li>Lauk Buka Puasa Jadi Lebih Mudah</li>
+                      <li>Takut corona?, gak usah keluar rumah, karena oisi datang didepan rumah kamu</li>
+                      <li>Makana fresh dan selalu segar, karen oisi tidak tahan lama berada diluar suhu dingin, harus selalu beku difreezer</li>
+                      <li>Tidak menggunakan bahan-2 yg berbahaya seperti pengawet, peyedap rasa, dan lainnya</li>
+                      <div className="hero__btn" data-animation="fadeInRight" data-delay="1s">
+                        <Link href="/catagori">
+                          <a className="btn hero-btn">Beli Sekarang</a>
+                        </Link>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="col-xl-6 col-lg-6 col-md-6 col-sm-6 d-none d-md-block">
+                    <div className="hero__img" data-animation="bounceIn" data-delay=".4s">
+                      <img src="/assets/img/hero/hero_man3.jpg" alt="" style={{ maxWidth: 600, maxHeight: 600 }} />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <section className="category-area section-padding30">
+          <div className="container-fluid">
+            <div className="row">
+              <div className="col-lg-12">
+                <div className="section-tittle text-center mb-85">
+                  <h2>Produk Yang Sering Habis</h2>
+                </div>
+              </div>
+            </div>
+            <div className="row">
+              <div className="col-xl-4 col-lg-6">
+                <div className="single-category mb-30">
+                  <div className="category-img">
+                    <img src="/assets/img/categori/spicy_chicken.jpg" alt="" />
+                    <div className="category-caption">
+                      <h2>Spicy Chicken</h2>
+                      <span className="best"><a href="#">Beli</a></span>
+                      <span className="collection">Laris</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              {/* <div className="col-xl-4 col-lg-6">
+                <div className="single-category mb-30">
+                  <div className="category-img text-center">
+                    <div className="category-caption">
+                      <span className="collection">Discount!</span>
+                      <h2>Winter Cloth</h2>
+                      <p>New Collection</p>
+                    </div>
+                  </div>
+                </div>
+              </div> */}
+              <div className="col-xl-4 col-lg-6">
+                <div className="single-category mb-30">
+                  <div className="category-img">
+                    <img src="/assets/img/categori/egg_chicken_roll.jpg" alt="" />
+                    <div className="category-caption">
+                      <h2>Egg Chicken Roll</h2>
+                      <span className="best"><a href="#">Beli</a></span>
+                      <span className="collection">Laris</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <div className="slider-area" style={{ marginBottom: 140 }}>
+          <div className="slider-active">
+            <div className="container">
+              <h1 className="text-manfaat">Masih ragu untuk membeli Oisi?, tayakan langsung masalah kamu </h1>
+              <div className="row d-flex align-items-center justify-content-between">
+                <Link href="/catagori">
+                  <a className="btn hero-btn">Taya Sekarang</a>
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <Roles />
+        {/* <Step />
+        <div className="gallery-wrapper lf-padding">
+          <div className="gallery-area">
+            <div className="container-fluid">
+              <div className="row">
+                <div className="gallery-items">
+                  <img src="/assets/img/gallery/gallery1.jpg" alt="" />
+                </div>
+                <div className="gallery-items">
+                  <img src="/assets/img/gallery/gallery2.jpg" alt="" />
+                </div>
+                <div className="gallery-items">
+                  <img src="/assets/img/gallery/gallery3.jpg" alt="" />
+                </div>
+                <div className="gallery-items">
+                  <img src="/assets/img/gallery/gallery4.jpg" alt="" />
+                </div>
+                <div className="gallery-items">
+                  <img src="/assets/img/gallery/gallery5.jpg" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> */}
+
       </main>
-
-      <footer>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className="logo" />
-        </a>
-      </footer>
-
-      <style jsx>{`
-        .container {
-          min-height: 100vh;
-          padding: 0 0.5rem;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-        }
-
-        main {
-          padding: 5rem 0;
-          flex: 1;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-        }
-
-        footer {
-          width: 100%;
-          height: 100px;
-          border-top: 1px solid #eaeaea;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-        }
-
-        footer img {
-          margin-left: 0.5rem;
-        }
-
-        footer a {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-        }
-
-        a {
-          color: inherit;
-          text-decoration: none;
-        }
-
-        .title a {
-          color: #0070f3;
-          text-decoration: none;
-        }
-
-        .title a:hover,
-        .title a:focus,
-        .title a:active {
-          text-decoration: underline;
-        }
-
-        .title {
-          margin: 0;
-          line-height: 1.15;
-          font-size: 4rem;
-        }
-
-        .title,
-        .description {
-          text-align: center;
-        }
-
-        .description {
-          line-height: 1.5;
-          font-size: 1.5rem;
-        }
-
-        code {
-          background: #fafafa;
-          border-radius: 5px;
-          padding: 0.75rem;
-          font-size: 1.1rem;
-          font-family: Menlo, Monaco, Lucida Console, Liberation Mono,
-            DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
-        }
-
-        .grid {
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          flex-wrap: wrap;
-
-          max-width: 800px;
-          margin-top: 3rem;
-        }
-
-        .card {
-          margin: 1rem;
-          flex-basis: 45%;
-          padding: 1.5rem;
-          text-align: left;
-          color: inherit;
-          text-decoration: none;
-          border: 1px solid #eaeaea;
-          border-radius: 10px;
-          transition: color 0.15s ease, border-color 0.15s ease;
-        }
-
-        .card:hover,
-        .card:focus,
-        .card:active {
-          color: #0070f3;
-          border-color: #0070f3;
-        }
-
-        .card h3 {
-          margin: 0 0 1rem 0;
-          font-size: 1.5rem;
-        }
-
-        .card p {
-          margin: 0;
-          font-size: 1.25rem;
-          line-height: 1.5;
-        }
-
-        .logo {
-          height: 1em;
-        }
-
-        @media (max-width: 600px) {
-          .grid {
-            width: 100%;
-            flex-direction: column;
-          }
-        }
-      `}</style>
-
-      <style jsx global>{`
-        html,
-        body {
-          padding: 0;
-          margin: 0;
-          font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
-            Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
-            sans-serif;
-        }
-
-        * {
-          box-sizing: border-box;
-        }
-      `}</style>
-    </div>
+    </Layout>
   )
 }
