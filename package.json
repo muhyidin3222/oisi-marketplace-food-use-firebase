@@ -10,11 +10,8 @@
   "dependencies": {
     "@zeit/next-css": "^1.0.1",
     "@zeit/next-sass": "^1.0.1",
-    "fs": "^0.0.1-security",
-    "jquery": "^3.5.0",
     "next": "9.3.6",
     "next-images": "^1.4.0",
-    "nprogress": "^0.2.0",
     "prop-types": "^15.7.2",
     "react": "16.13.1",
     "react-dom": "16.13.1"
