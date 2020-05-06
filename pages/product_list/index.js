@@ -2,16 +2,6 @@ import React from 'react'
 import Layout from '../../components/layout'
 
 export default function index() {
-    getUserData = () => {
-        // let ref = Firebase.database().ref('/');
-        // ref.on('list_produk', snapshot => {
-        //     const state = snapshot.val();
-        //     console.log(state)
-        //     // this.setState(state);
-        // });
-        // console.log('DATA RETRIEVED');
-    }
-
     return (
         <Layout>
 
