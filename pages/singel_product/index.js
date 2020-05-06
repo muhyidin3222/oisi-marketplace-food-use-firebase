@@ -8,7 +8,7 @@ export default function index() {
     const router = useRouter()
     const id = router.query.id
     const dataCategori = data[id]
-    const { id, img, hot, price, discount, name, href, per, dec, total } = dataCategori
+    const { img, hot, price, discount, name, href, per, dec, total } = dataCategori
     // console.log(dataCategori)
     return (
         <Layout>
