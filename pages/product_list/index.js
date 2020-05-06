@@ -2,12 +2,6 @@ import React from 'react'
 import Layout from '../../components/layout'
 
 export default function index() {
-    useEffect(() => {
-        this.getUserData()
-        return () => {
-        }
-    }, [])
-
     getUserData = () => {
         // let ref = Firebase.database().ref('/');
         // ref.on('list_produk', snapshot => {

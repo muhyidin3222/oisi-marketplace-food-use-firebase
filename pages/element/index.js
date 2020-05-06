@@ -364,42 +364,42 @@ export default function index() {
                         <div className="row gallery-item">
                             <div className="col-md-4">
                                 <a href="assets/img/elements/g1.jpg" className="img-pop-up">
-                                    <div className="single-gallery-image" style={{background: url("assets/img/elements/g1.jpg")}}></div>
+                                    {/* <div className="single-gallery-image" style={{background: url("assets/img/elements/g1.jpg")}}></div> */}
                                 </a>
                             </div>
                             <div className="col-md-4">
                                 <a href="assets/img/elements/g2.jpg" className="img-pop-up">
-                                    <div className="single-gallery-image" style={{background: url("assets/img/elements/g2.jpg")}}></div>
+                                    {/* <div className="single-gallery-image" style={{background: url("assets/img/elements/g2.jpg")}}></div> */}
                                 </a>
                             </div>
                             <div className="col-md-4">
                                 <a href="assets/img/elements/g3.jpg" className="img-pop-up">
-                                    <div className="single-gallery-image" style={{background: url("assets/img/elements/g3.jpg")}}></div>
+                                    {/* <div className="single-gallery-image" style={{background: url("assets/img/elements/g3.jpg")}}></div> */}
                                 </a>
                             </div>
                             <div className="col-md-6">
                                 <a href="assets/img/elements/g4.jpg" className="img-pop-up">
-                                    <div className="single-gallery-image" style={{background: url("assets/img/elements/g4.jpg")}}></div>
+                                    {/* <div className="single-gallery-image" style={{background: url("assets/img/elements/g4.jpg")}}></div> */}
                                 </a>
                             </div>
                             <div className="col-md-6">
                                 <a href="assets/img/elements/g5.jpg" className="img-pop-up">
-                                    <div className="single-gallery-image" style={{background: url("assets/img/elements/g5.jpg")}}></div>
+                                    {/* <div className="single-gallery-image" style={{background: url("assets/img/elements/g5.jpg")}}></div> */}
                                 </a>
                             </div>
                             <div className="col-md-4">
                                 <a href="assets/img/elements/g6.jpg" className="img-pop-up">
-                                    <div className="single-gallery-image" style={{background: url("assets/img/elements/g6.jpg")}}></div>
+                                    {/* <div className="single-gallery-image" style={{background: url("assets/img/elements/g6.jpg")}}></div> */}
                                 </a>
                             </div>
                             <div className="col-md-4">
                                 <a href="assets/img/elements/g7.jpg" className="img-pop-up">
-                                    <div className="single-gallery-image" style={{background: url("assets/img/elements/g7.jpg")}}></div>
+                                    {/* <div className="single-gallery-image" style={{background: url("assets/img/elements/g7.jpg")}}></div> */}
                                 </a>
                             </div>
                             <div className="col-md-4">
                                 <a href="assets/img/elements/g8.jpg" className="img-pop-up">
-                                    <div className="single-gallery-image" style={{background: url("assets/img/elements/g8.jpg")}}></div>
+                                    {/* <div className="single-gallery-image" style={{background: url("assets/img/elements/g8.jpg")}}></div> */}
                                 </a>
                             </div>
                         </div>
