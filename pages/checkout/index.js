@@ -34,15 +34,15 @@ export default function index() {
         </p>
                         <form className="row contact_form" action="#" method="post" novalidate="novalidate">
                             <div className="col-md-6 form-group p_star">
-                                <input type="text" className="form-control" id="name" name="name" value=" " />
+                                <input type="text" className="form-control" id="name" name="name" defaultValue=" " />
                                 <span className="placeholder" data-placeholder="Username or Email"></span>
                             </div>
                             <div className="col-md-6 form-group p_star">
-                                <input type="password" className="form-control" id="password" name="password" value="" />
+                                <input type="password" className="form-control" id="password" name="password" defaultValue="" />
                                 <span className="placeholder" data-placeholder="Password"></span>
                             </div>
                             <div className="col-md-12 form-group">
-                                <button type="submit" value="submit" className="btn_3">
+                                <button type="submit" defaultValue="submit" className="btn_3">
                                     log in
             </button>
                                 <div className="creat_account">
@@ -89,9 +89,9 @@ export default function index() {
                                     </div>
                                     <div className="col-md-12 form-group p_star">
                                         <select className="country_select">
-                                            <option value="1">Country</option>
-                                            <option value="2">Country</option>
-                                            <option value="4">Country</option>
+                                            <option defaultValue="1">Country</option>
+                                            <option defaultValue="2">Country</option>
+                                            <option defaultValue="4">Country</option>
                                         </select>
                                     </div>
                                     <div className="col-md-12 form-group p_star">
@@ -108,9 +108,9 @@ export default function index() {
                                     </div>
                                     <div className="col-md-12 form-group p_star">
                                         <select className="country_select">
-                                            <option value="1">District</option>
-                                            <option value="2">District</option>
-                                            <option value="4">District</option>
+                                            <option defaultValue="1">District</option>
+                                            <option defaultValue="2">District</option>
+                                            <option defaultValue="4">District</option>
                                         </select>
                                     </div>
                                     <div className="col-md-12 form-group">

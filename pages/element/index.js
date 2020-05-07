@@ -497,11 +497,11 @@ export default function index() {
                                         </div>
                                         <div className="form-select" id="default-select">
                                             <select>
-                                                <option value="1">City</option>
-                                                <option value="1">Dhaka</option>
-                                                <option value="1">Dilli</option>
-                                                <option value="1">Newyork</option>
-                                                <option value="1">Islamabad</option>
+                                                <option defaultValue="1">City</option>
+                                                <option defaultValue="1">Dhaka</option>
+                                                <option defaultValue="1">Dilli</option>
+                                                <option defaultValue="1">Newyork</option>
+                                                <option defaultValue="1">Islamabad</option>
                                             </select>
                                         </div>
                                     </div>
@@ -509,11 +509,11 @@ export default function index() {
                                         <div className="icon"><i className="fa fa-globe" aria-hidden="true"></i></div>
                                         <div className="form-select" id="default-select">
                                             <select>
-                                                <option value=" 1">Country</option>
-                                                <option value="1">Bangladesh</option>
-                                                <option value="1">India</option>
-                                                <option value="1">England</option>
-                                                <option value="1">Srilanka</option>
+                                                <option defaultValue=" 1">Country</option>
+                                                <option defaultValue="1">Bangladesh</option>
+                                                <option defaultValue="1">India</option>
+                                                <option defaultValue="1">England</option>
+                                                <option defaultValue="1">Srilanka</option>
                                             </select>
                                         </div>
                                     </div>
@@ -574,11 +574,11 @@ export default function index() {
                                     <h3 className="mb-30">Selectboxes</h3>
                                     <div className="default-select" id="default-select">
                                         <select>
-                                            <option value=" 1">English</option>
-                                            <option value="1">Spanish</option>
-                                            <option value="1">Arabic</option>
-                                            <option value="1">Portuguise</option>
-                                            <option value="1">Bengali</option>
+                                            <option defaultValue=" 1">English</option>
+                                            <option defaultValue="1">Spanish</option>
+                                            <option defaultValue="1">Arabic</option>
+                                            <option defaultValue="1">Portuguise</option>
+                                            <option defaultValue="1">Bengali</option>
                                         </select>
                                     </div>
                                 </div>

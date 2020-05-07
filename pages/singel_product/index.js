@@ -7,8 +7,8 @@ import { useRouter } from 'next/router'
 export default function index() {
     const router = useRouter()
     const id = router.query.id
-    const dataCategori = data[id]
-    const { name, dec } = dataCategori
+        console.log(data[6])
+    const { name, dec } = data[Number(id)] ? data[Number(id)] : {}
     // console.log(dataCategori)
     return (
         <Layout>
@@ -53,7 +53,7 @@ export default function index() {
                                         <p>Quantity</p>
                                         <div className="product_count d-inline-block">
                                             <span className="product_count_item inumber-decrement"> <i className="ti-minus"></i></span>
-                                            <input className="product_count_item input-number" type="text" value="1" min="0" max="10" />
+                                            <input className="product_count_item input-number" type="text" defaultValue={1} min={0} max={10} />
                                             <span className="product_count_item number-increment"> <i className="ti-plus"></i></span>
                                         </div>
                                         <p>$5</p>

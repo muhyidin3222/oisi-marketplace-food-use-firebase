@@ -58,7 +58,7 @@ export default function index() {
                                                     <i className="ti-angle-down"></i>
                                                 </button> -->
                     <span className="input-number-decrement"> <i className="ti-minus"></i></span>
-                                                <input className="input-number" type="text" value="1" min="0" max="10" />
+                                                <input className="input-number" type="text"  defaultValue={1} min={0} max={10} />
                                                 <span className="input-number-increment"> <i className="ti-plus"></i></span>
                                             </div>
                                         </td>
@@ -83,7 +83,7 @@ export default function index() {
                                         <td>
                                             <div className="product_count">
                                                 <span className="input-number-decrement"> <i className="ti-minus"></i></span>
-                                                <input className="input-number" type="text" value="1" min="0" max="10" />
+                                                <input className="input-number" type="text" defaultValue={1} min={0} max={10} />
                                                 <span className="input-number-increment"> <i className="ti-plus"></i></span>
                                             </div>
                                         </td>
@@ -144,14 +144,14 @@ export default function index() {
                       <i className="fa fa-caret-down" aria-hidden="true"></i>
                                                 </h6>
                                                 <select className="shipping_select">
-                                                    <option value="1">Bangladesh</option>
-                                                    <option value="2">India</option>
-                                                    <option value="4">Pakistan</option>
+                                                    <option defaultValue="1">Bangladesh</option>
+                                                    <option defaultValue="2">India</option>
+                                                    <option defaultValue="4">Pakistan</option>
                                                 </select>
                                                 <select className="shipping_select section_bg">
-                                                    <option value="1">Select a State</option>
-                                                    <option value="2">Select a State</option>
-                                                    <option value="4">Select a State</option>
+                                                    <option defaultValue="1">Select a State</option>
+                                                    <option defaultValue="2">Select a State</option>
+                                                    <option defaultValue="4">Select a State</option>
                                                 </select>
                                                 <input className="post_code" type="text" placeholder="Postcode/Zipcode" />
                                                 <a className="btn_1" href="#">Update Details</a>
