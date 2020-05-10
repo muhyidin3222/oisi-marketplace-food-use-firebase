@@ -1,23 +1,12 @@
 import React from 'react'
 
 import Layout from '../../components/layout'
+import SliderArea from '../../components/sliderArea'
 
 export default function index() {
     return (
         <Layout>
-            <div className="slider-area ">
-                <div className="single-slider slider-height2 d-flex align-items-center" data-background="assets/img/hero/category.jpg">
-                    <div className="container">
-                        <div className="row">
-                            <div className="col-xl-12">
-                                <div className="hero-cap text-center">
-                                    <h2>About</h2>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <SliderArea title="About"/>
 
             <section className="about_us padding_top">
                 <div className="container">

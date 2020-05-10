@@ -6,19 +6,19 @@ export default function cardCatagori({ hot, name, price, discount, href, img, id
         <div class="col-xl-4 col-lg-4 col-md-6">
             <div class="single-product mb-60">
                 <div class="product-img">
-                    <img src={img} />
+                    <img src={"/assets/img/" + img[0]} />
                     {hot ? <div class="new-product">
-                        <span>Top</span>
+                        <span>Laris</span>
                     </div> : ""}
                 </div>
                 <div class="product-caption">
-                    <div class="product-ratting">
+                    {/* <div class="product-ratting">
                         <i class="far fa-star"></i>
                         <i class="far fa-star"></i>
                         <i class="far fa-star"></i>
                         <i class="far fa-star"></i>
                         <i class="far fa-star"></i>
-                    </div>
+                    </div> */}
                     <h4>
                         <Link href={href ? `${href}?id=${id}` : "/"}>
                             <a>{name || ""}</a>
@@ -30,6 +30,9 @@ export default function cardCatagori({ hot, name, price, discount, href, img, id
                             {discount ? <li class="discount">{discount || ""}</li> : ""}
                         </ul>
                     </div>
+                    <Link href={href ? `${href}?id=${id}` : "/"}>
+                        <a className="genric-btn info">Beli</a>
+                    </Link>
                 </div>
             </div>
         </div>

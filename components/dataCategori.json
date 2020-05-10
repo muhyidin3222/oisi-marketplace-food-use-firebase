@@ -1,7 +1,13 @@
 [
     {
         "id": 1,
-        "img": "assets/img/categori/product1.png",
+        "img": [
+            "product/egg_chicken_roll/1.jpg",
+            "product/egg_chicken_roll/2.jpg",
+            "product/egg_chicken_roll/3.jpg",
+            "product/egg_chicken_roll/4.jpg",
+            "product/egg_chicken_roll/5.jpg"
+        ],
         "hot": true,
         "price": "Rp 27.000",
         "discount": "Rp 30.000",
@@ -13,7 +19,9 @@
     },
     {
         "id": 2,
-        "img": "assets/img/categori/product1.png",
+        "img": [
+            "product/cumi_roll/1.jpg"
+        ],
         "hot": false,
         "price": "Rp 28.000",
         "discount": "Rp 31.000",
@@ -24,7 +32,12 @@
     },
     {
         "id": 3,
-        "img": "assets/img/categori/product1.png",
+        "img": [
+            "product/shrimp_roll/1.jpg",
+            "product/shrimp_roll/2.jpg",
+            "product/shrimp_roll/4.jpg",
+            "product/shrimp_roll/6.jpg"
+        ],
         "hot": true,
         "price": "Rp 28.000",
         "discount": "Rp 31.000",
@@ -35,7 +48,11 @@
     },
     {
         "id": 4,
-        "img": "assets/img/categori/product1.png",
+        "img": [
+            "product/spicy_chicken/1.jpeg",
+            "product/spicy_chicken/2.jpg",
+            "product/spicy_chicken/4.jpeg"
+        ],
         "hot": true,
         "price": "Rp 27.000",
         "discount": "Rp 30.000",
@@ -46,7 +63,13 @@
     },
     {
         "id": 5,
-        "img": "assets/img/categori/product1.png",
+        "img": [
+            "product/egg_kado/1.jpg",
+            "product/egg_kado/2.jpg",
+            "product/egg_kado/3.jpg",
+            "product/egg_kado/4.jpg",
+            "product/egg_kado/5.jpg"
+        ],
         "hot": true,
         "price": "Rp 36.500",
         "discount": "Rp 39.500",
@@ -57,7 +80,10 @@
     },
     {
         "id": 6,
-        "img": "assets/img/categori/product1.png",
+        "img": [
+            "product/lumpia_rajungan/1.jpeg",
+            "product/lumpia_rajungan/2.jpeg"
+        ],
         "hot": false,
         "price": "Rp 27.250",
         "discount": "Rp 30.250",
@@ -68,7 +94,12 @@
     },
     {
         "id": 7,
-        "img": "assets/img/categori/product1.png",
+        "img": [
+            "product/chicken_teba/1.jpg",
+            "product/chicken_teba/3.jpg",
+            "product/chicken_teba/4.jpg",
+            "product/chicken_teba/6.jpg"
+        ],
         "hot": false,
         "price": "Rp 37.250",
         "discount": "Rp 40.250",
@@ -79,7 +110,12 @@
     },
     {
         "id": 8,
-        "img": "assets/img/categori/product1.png",
+        "img": [
+            "product/chicken_katsu/1.jpg",
+            "product/chicken_katsu/2.jpeg",
+            "product/chicken_katsu/4.jpeg",
+            "product/chicken_katsu/5.jpg"
+        ],
         "hot": false,
         "price": "Rp 53.500",
         "discount": "Rp 56.500",
@@ -90,7 +126,13 @@
     },
     {
         "id": 9,
-        "img": "assets/img/categori/product1.png",
+        "img": [
+            "product/chicken_karage/1.jpg",
+            "product/chicken_karage/2.jpg",
+            "product/chicken_karage/3.jpg",
+            "product/chicken_karage/4.jpg",
+            "product/chicken_karage/5.jpg"
+        ],
         "hot": false,
         "price": "Rp 68.500",
         "discount": "Rp 71.500",
@@ -100,7 +142,11 @@
     },
     {
         "id": 10,
-        "img": "assets/img/categori/product1.png",
+        "img": [
+            "product/chicken-teriyaki/1.jpg",
+            "product/chicken-teriyaki/2.jpg",
+            "product/chicken-teriyaki/3.jpg"
+        ],
         "hot": false,
         "price": "Rp 98.500",
         "discount": "Rp 101.500",
@@ -110,7 +156,13 @@
     },
     {
         "id": 11,
-        "img": "assets/img/categori/product1.png",
+        "img": [
+            "product/beef_teriyaki/1.png",
+            "product/beef_teriyaki/2.jpg",
+            "product/beef_teriyaki/3.jpg",
+            "product/beef_teriyaki/4.jpg",
+            "product/beef_teriyaki/5.jpg"
+        ],
         "hot": false,
         "price": "Rp 123.500",
         "discount": "Rp 126.500",
@@ -120,7 +172,13 @@
     },
     {
         "id": 12,
-        "img": "assets/img/categori/product1.png",
+        "img": [
+            "product/ebifuray/1.jpg",
+            "product/ebifuray/2.jpg",
+            "product/ebifuray/3.jpg",
+            "product/ebifuray/4.jpg",
+            "product/ebifuray/5.jpg"
+        ],
         "hot": false,
         "price": "Rp blm ada harganya",
         "discount": "Rp 101.500",
@@ -130,7 +188,12 @@
     },
     {
         "id": 13,
-        "img": "assets/img/categori/product1.png",
+        "img": [
+            "product/acar/2.jpg",
+            "product/acar/1.jpg",
+            "product/acar/3.jpg",
+            "product/acar/4.jpg"
+        ],
         "hot": false,
         "price": "Rp 68.500",
         "discount": "Rp 71.500",
@@ -140,7 +203,11 @@
     },
     {
         "id": 14,
-        "img": "assets/img/categori/product1.png",
+        "img": [
+            "product/frozen_potatoes/1.jpg",
+            "product/frozen_potatoes/2.jpg",
+            "product/frozen_potatoes/3.jpg"
+        ],
         "hot": false,
         "price": "Rp gak ada harga",
         "discount": "Rp 71.500",
@@ -150,7 +217,12 @@
     },
     {
         "id": 15,
-        "img": "assets/img/categori/product1.png",
+        "img": [
+            "product/mayones/4.jpg",
+            "product/mayones/1.jpg",
+            "product/mayones/2.jpg",
+            "product/mayones/3.jpg"
+        ],
         "hot": false,
         "price": "Rp 108.500",
         "discount": "Rp 111.500",

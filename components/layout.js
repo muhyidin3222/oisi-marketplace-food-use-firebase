@@ -168,23 +168,23 @@ export default function layout({ children }) {
                                                     </div> */}
                                                 {/* </div> */}
                                             </li>
-                                            <li className=" d-none d-xl-block">
+                                            {/* <li className=" d-none d-xl-block">
                                                 <div className="favorit-items">
                                                     <i className="far fa-heart"></i>
                                                 </div>
-                                            </li>
-                                            <li>
+                                            </li> */}
+                                            {/* <li>
                                                 <div className="shopping-card">
                                                     <Link href="/cart">
                                                         <a><i className="fas fa-shopping-cart"></i></a>
                                                     </Link>
                                                 </div>
-                                            </li>
-                                            <li className="d-none d-lg-block">
+                                            </li> */}
+                                            {/* <li className="d-none d-lg-block">
                                                 <Link href="/login">
                                                     <a className="btn header-btn">Sign in</a>
                                                 </Link>
-                                            </li>
+                                            </li> */}
                                         </ul>
                                     </div>
                                     <div className="col-12">

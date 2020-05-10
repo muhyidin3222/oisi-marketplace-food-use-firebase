@@ -4,24 +4,14 @@ import Layout from '../../components/layout'
 import CardCatagori from '../../components/cardCatagori'
 import data from '../../components/dataCategori.json'
 import Roles from '../../components/roles'
+import SliderArea from '../../components/sliderArea'
 
 export default function index() {
     return (
         <Layout>
             <main>
-                <div className="slider-area ">
-                    <div className="single-slider slider-height2 d-flex align-items-center" data-background="assets/img/hero/category.jpg">
-                        <div className="container">
-                            <div className="row">
-                                <div className="col-xl-12">
-                                    <div className="hero-cap text-center">
-                                        <h2>Daftar Produk</h2>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+
+                <SliderArea title="Daftar Produk" />
 
                 <section className="latest-product-area latest-padding">
                     <div className="container">
@@ -65,29 +55,6 @@ export default function index() {
                         </div>
                     </div>
                 </div> */}
-                <div className="gallery-wrapper lf-padding">
-                    <div className="gallery-area">
-                        <div className="container-fluid">
-                            <div className="row">
-                                <div className="gallery-items">
-                                    <img src="assets/img/gallery/gallery1.jpg" alt="" />
-                                </div>
-                                <div className="gallery-items">
-                                    <img src="assets/img/gallery/gallery2.jpg" alt="" />
-                                </div>
-                                <div className="gallery-items">
-                                    <img src="assets/img/gallery/gallery3.jpg" alt="" />
-                                </div>
-                                <div className="gallery-items">
-                                    <img src="assets/img/gallery/gallery4.jpg" alt="" />
-                                </div>
-                                <div className="gallery-items">
-                                    <img src="assets/img/gallery/gallery5.jpg" alt="" />
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
             </main>
         </Layout >
     )

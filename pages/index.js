@@ -176,31 +176,6 @@ export default function index() {
         </div>
 
         <Roles />
-        {/* <Step />
-        <div className="gallery-wrapper lf-padding">
-          <div className="gallery-area">
-            <div className="container-fluid">
-              <div className="row">
-                <div className="gallery-items">
-                  <img src="/assets/img/gallery/gallery1.jpg" alt="" />
-                </div>
-                <div className="gallery-items">
-                  <img src="/assets/img/gallery/gallery2.jpg" alt="" />
-                </div>
-                <div className="gallery-items">
-                  <img src="/assets/img/gallery/gallery3.jpg" alt="" />
-                </div>
-                <div className="gallery-items">
-                  <img src="/assets/img/gallery/gallery4.jpg" alt="" />
-                </div>
-                <div className="gallery-items">
-                  <img src="/assets/img/gallery/gallery5.jpg" alt="" />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div> */}
-
       </main>
     </Layout>
   )
