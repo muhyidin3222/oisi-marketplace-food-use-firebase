@@ -1,73 +1,92 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import Layout from '../../components/layout'
 
-import data from '../../components/dataCategori.json'
+import dataCategori from '../../components/dataCategori.json'
 import { useRouter } from 'next/router'
+import Link from 'next/link'
 
 export default function index() {
+    const [state, setstate] = useState(0)
+    const [quantity, setquantity] = useState(1)
+    const [data, setData] = useState({})
     const router = useRouter()
-    const id = router.query.id
-        console.log(data[6])
-    const { name, dec } = data[Number(id)] ? data[Number(id)] : {}
-    // console.log(dataCategori)
+    const id = Number(router.query.id)
+    // console.log(data[6])
+    useEffect(() => {
+        setData(id ? dataCategori.filter(value => value.id === id)[0] : {})
+        // return () => {}
+    }, [])
+    const minusQuantity = () => {
+        if (quantity !== 1) {
+            setquantity(quantity - 1)
+        }
+    }
+
+    const plusQuantity = () => {
+        setquantity(quantity + 1)
+    }
+    const { name, dec, img, komposisi, cara_membuat, price } = data
+    console.log(data)
     return (
         <Layout>
-            {/* <div className="slider-area ">
-                <div className="single-slider slider-height2 d-flex align-items-center" data-background="assets/img/hero/category.jpg">
-                    <div className="container">
-                        <div className="row">
-                            <div className="col-xl-12">
-                                <div className="hero-cap text-center">
-                                    <h2>product Details</h2>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div> */}
-
             <div className="product_image_area">
                 <div className="container">
                     <div className="row justify-content-center">
+
+                        {img && img.length ? <div className="img-big">
+                            <img src={"assets/img/" + img[state]} className="img-big" />
+                        </div> : ""}
                         <div className="col-lg-12">
-                            <div className="product_img_slide owl-carousel">
-                                <div className="single_product_img">
-                                    <img src="assets/img/product/product_list_1.png" alt="#" className="img-fluid" />
-                                </div>
-                                {/*     <div className="single_product_img">
-                                    <img src="assets/img/product/single_product.png" alt="#" className="img-fluid" />
-                                </div>
-                                <div className="single_product_img">
-                                    <img src="assets/img/product/single_product.png" alt="#" className="img-fluid" />
-                                </div>*/}
+                            <div className="wrepper-child-img">
+                                {
+                                    // img && img.length ? img.map((value, index) => (
+                                    //     <div onClick={() => setstate(index)} key={index} className="card-img">
+                                    //         <img src={"assets/img/" + value} className="img-child" />
+                                    //     </div>
+                                    // )) : ""
+                                }
                             </div>
                         </div>
                         <div className="col-lg-8">
                             <div className="single_product_text text-center">
                                 <h3>{name || ""}</h3>
-                                <p>{dec}</p>
-                                <p>{dec}</p>
-                                <p>{dec}</p>
+                                {
+                                    dec && dec[0] ? dec.map((value, index) => (
+                                        <p key={index}>{value}</p>
+                                    )) : ""
+                                }
+                                <h5>Komposisi:</h5>
+                                <p>{komposisi || ""}</p>
+                                <h5>Cara Membuat:</h5>
+                                <p>{cara_membuat || ""}</p>
+                                <h5>Harga</h5>
+                                <p>
+                                    {/* <input /> */}
+                                </p>
+                                <h5>Harga</h5>
+                                {/* <p>{price || ""}</p> */}
                                 <div className="card_area">
                                     <div className="product_count_area">
-                                        <p>Quantity</p>
+                                        <p>Jumlah</p>
                                         <div className="product_count d-inline-block">
-                                            <span className="product_count_item inumber-decrement"> <i className="ti-minus"></i></span>
-                                            <input className="product_count_item input-number" type="text" defaultValue={1} min={0} max={10} />
-                                            <span className="product_count_item number-increment"> <i className="ti-plus"></i></span>
+                                            <span className="product_count_item inumber-decrement" onClick={minusQuantity}> <i className="ti-minus"></i></span>
+                                            <input className="product_count_item input-number" type="text" defaultValue={quantity} min={1} max={10} value={quantity} />
+                                            <span className="product_count_item number-increment" onClick={plusQuantity}> <i className="ti-plus"></i></span>
                                         </div>
-                                        <p>$5</p>
+                                        <p>{price ? price * quantity : ""}</p>
                                     </div>
-                                    <div className="add_to_cart">
-                                        <a href="#" className="btn_3">add to cart</a>
+                                    {/* <Link > */}
+                                    <div className="add_to_cart" >
+                                        <a href={`https://wa.me/6285212126302?text='Hi,%20Saya%20mau%20pesan%20${name}%20jumlah%20${quantity}%20dengan%20haraga${price * quantity}`} target="_blank" className="btn_3">Beli</a>
                                     </div>
+                                    {/* </Link> */}
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <section className="subscribe_part section_padding">
+            {/* <section className="subscribe_part section_padding">
                 <div className="container">
                     <div className="row justify-content-center">
                         <div className="col-lg-8">
@@ -82,8 +101,7 @@ export default function index() {
                         </div>
                     </div>
                 </div>
-            </section>
-
+            </section> */}
         </Layout>
     )
 }

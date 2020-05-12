@@ -1,7 +1,7 @@
 import React from 'react'
 import Link from 'next/link'
 
-export default function cardCatagori({ hot, name, price, discount, href, img, id }) {
+export default function cardCatagori({ hot, name, price, discount, href, img, id, minimIsi }) {
     return (
         <div class="col-xl-4 col-lg-4 col-md-6">
             <div class="single-product mb-60">
@@ -21,13 +21,15 @@ export default function cardCatagori({ hot, name, price, discount, href, img, id
                     </div> */}
                     <h4>
                         <Link href={href ? `${href}?id=${id}` : "/"}>
-                            <a>{name || ""}</a>
+                            <div>
+                                <a>{name || ""}</a> <a style={{ marginLeft: 10, color:'red' }}>Isi {minimIsi || ""}</a>
+                            </div>
                         </Link>
                     </h4>
                     <div class="price">
                         <ul>
-                            <li>{price || ""}</li>
-                            {discount ? <li class="discount">{discount || ""}</li> : ""}
+                            <li>Rp {price + ".000" || ""}</li>
+                            {discount ? <li class="discount">Rp {discount + ".000" || ""}</li> : ""}
                         </ul>
                     </div>
                     <Link href={href ? `${href}?id=${id}` : "/"}>
@@ -38,3 +40,20 @@ export default function cardCatagori({ hot, name, price, discount, href, img, id
         </div>
     )
 }
+
+
+// {
+//     "id": 14,
+//     "img": [
+//         "product/frozen_potatoes/1.jpg",
+//         "product/frozen_potatoes/2.jpg",
+//         "product/frozen_potatoes/3.jpg"
+//     ],
+//     "hot": false,
+//     "price": 70.000,
+//     "discount": 71.500,
+//     "name": "Frozen Potatoes",
+//     "per": "Gram",
+//     "href": "/",
+//     "minimIsi": ""
+// },

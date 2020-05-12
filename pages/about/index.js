@@ -6,7 +6,7 @@ import SliderArea from '../../components/sliderArea'
 export default function index() {
     return (
         <Layout>
-            <SliderArea title="About"/>
+            <SliderArea title="Tentang kami"/>
 
             <section className="about_us padding_top">
                 <div className="container">
@@ -15,10 +15,10 @@ export default function index() {
                             <div className="about_us_content">
                                 <h5>Our Mission</h5>
                                 <h3>Donec imperdiet congue orci consequat mattis. Donec rutrum porttitor sollicitudin. Pellentesque id dolor tempor sapien feugiat ultrices nec sed neque.</h3>
-                                <div className="about_us_video">
+                                {/* <div className="about_us_video">
                                     <img src="assets/img/about_us_video.png" alt="#" className="img-fluid" />
                                     <a className="about_video_icon popup-youtube" href="https://www.youtube.com/watch?v=DWHB6nTyKDI"></a>
-                                </div>
+                                </div> */}
                             </div>
                         </div>
                     </div>
@@ -41,7 +41,7 @@ export default function index() {
                             </div>
                         </div>
                     </div>
-                    <div className="row justify-content-center">
+                    {/* <div className="row justify-content-center">
                         <div className="col-lg-3 col-sm-6">
                             <div className="single_feature_part">
                                 <img src="assets/img/icon/feature_icon_1.svg" alt="#" />
@@ -66,11 +66,11 @@ export default function index() {
                                 <h4>Product with Gift</h4>
                             </div>
                         </div>
-                    </div>
+                    </div> */}
                 </div>
             </section>
 
-            <section className="client_review">
+            {/* <section className="client_review">
                 <div className="container">
                     <div className="row justify-content-center">
                         <div className="col-lg-8">
@@ -100,9 +100,9 @@ export default function index() {
                         </div>
                     </div>
                 </div>
-            </section>
+            </section> */}
 
-            <section className="subscribe_part section_padding">
+            {/* <section className="subscribe_part section_padding">
                 <div className="container">
                     <div className="row justify-content-center">
                         <div className="col-lg-8">
@@ -117,7 +117,7 @@ export default function index() {
                         </div>
                     </div>
                 </div>
-            </section>
+            </section> */}
         </Layout>
     )
 }

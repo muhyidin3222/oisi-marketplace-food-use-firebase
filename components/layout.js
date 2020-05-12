@@ -1,5 +1,6 @@
 import React from 'react'
 import Link from 'next/link';
+// import logol from '/assets/img/home/logo.png'
 
 export default function layout({ children }) {
     return (
@@ -52,7 +53,8 @@ export default function layout({ children }) {
                                     <div className="col-xl-2 col-lg-2 col-md-2 col-sm-3" style={{ padding: 0 }}>
                                         <Link href="/about">
                                             <a>
-                                                <h3 className="text-logo">oisi food .</h3>
+                                                <img src={'/assets/img/home/logo.png'} style={{ height: 80, width: 80 }} />
+                                                {/* <h3 className="text-logo">oisi food .</h3> */}
                                                 {/* <img src="/assets/img/logo/logo.png" alt="" /> */}
                                             </a>
                                         </Link>
@@ -89,11 +91,11 @@ export default function layout({ children }) {
                                                             </li>
                                                         </ul>
                                                     </li> */}
-                                                    <li>
+                                                    {/* <li>
                                                         <Link href="/blog">
                                                             <a>Blog</a>
                                                         </Link>
-                                                        {/* <ul className="submenu">
+                                                        <ul className="submenu">
                                                             <li>
                                                                 <Link href="/blog">
                                                                     <a>Blog</a>
@@ -104,13 +106,13 @@ export default function layout({ children }) {
                                                                     <a>Blog Details</a>
                                                                 </Link>
                                                             </li>
-                                                        </ul> */}
-                                                    </li>
+                                                        </ul>
+                                                    </li> */}
                                                     <li>
                                                         <Link href="/about">
                                                             <a>About</a>
                                                         </Link>
-                                                    {/* <ul className="submenu">
+                                                        {/* <ul className="submenu">
                                                             <li>
                                                                 <Link href="/login">
                                                                     <a>Login</a>
@@ -150,7 +152,7 @@ export default function layout({ children }) {
                                                     </li>
                                                     <li>
                                                         <Link href="/contact">
-                                                            <a>Contact</a>
+                                                            <a>Kontak</a>
                                                         </Link>
                                                     </li>
                                                 </ul>
@@ -201,7 +203,7 @@ export default function layout({ children }) {
                 <div className="footer-area footer-padding">
                     <div className="container">
                         <div className="row d-flex justify-content-between">
-                            <div className="col-xl-3 col-lg-3 col-md-5 col-sm-6">
+                            {/* <div className="col-xl-3 col-lg-3 col-md-5 col-sm-6">
                                 <div className="sindgle-footer-caption mb-50">
                                     <div className="single-footer-caption mb-30">
                                         <div className="footer-logo">
@@ -218,37 +220,37 @@ export default function layout({ children }) {
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                            </div> */}
                             <div className="col-xl-2 col-lg-3 col-md-3 col-sm-5">
                                 <div className="single-footer-caption mb-50">
                                     <div className="footer-tittle">
                                         <h4>Quick Links</h4>
                                         <ul>
                                             <li>
+                                                <Link href="/">
+                                                    <a>Home</a>
+                                                </Link>
+                                            </li>
+                                            <li>
                                                 <Link href="/about">
                                                     <a>About</a>
                                                 </Link>
                                             </li>
                                             <li>
-                                                <Link href="/">
-                                                    <a> Offers & Discounts</a>
+                                                <Link href="/contact">
+                                                    <a>Kontak</a>
                                                 </Link>
                                             </li>
                                             <li>
-                                                <Link href="/">
-                                                    <a> Get Coupon</a>
-                                                </Link>
-                                            </li>
-                                            <li>
-                                                <Link href="/">
-                                                    <a>  Contact Us</a>
+                                                <Link href="/catagori">
+                                                    <a>Produk</a>
                                                 </Link>
                                             </li>
                                         </ul>
                                     </div>
                                 </div>
                             </div>
-                            <div className="col-xl-3 col-lg-3 col-md-4 col-sm-7">
+                            {/* <div className="col-xl-3 col-lg-3 col-md-4 col-sm-7">
                                 <div className="single-footer-caption mb-50">
                                     <div className="footer-tittle">
                                         <h4>New Products</h4>
@@ -310,14 +312,13 @@ export default function layout({ children }) {
                                         </ul>
                                     </div>
                                 </div>
-                            </div>
+                            </div> */}
                         </div>
                         <div className="row">
                             <div className="col-xl-7 col-lg-7 col-md-7">
                                 <div className="footer-copy-right">
                                     <p>
-                                        Copyright 
-                                        {/* &copy;<script>document.write(new Date().getFullYear());</script>  */}
+                                        Copyright
                                         All rights reserved | This template is made with <i className="ti-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
                                     </p>
                                 </div>

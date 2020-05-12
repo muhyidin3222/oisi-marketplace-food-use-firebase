@@ -9,13 +9,19 @@
             "product/egg_chicken_roll/5.jpg"
         ],
         "hot": true,
-        "price": "Rp 27.000",
-        "discount": "Rp 30.000",
+        "price": 27000,
+        "discount": 30.000,
         "name": "Egg Chicken Roll",
         "href": "/singel_product",
         "per": "Pcs",
-        "dec": "",
-        "total": null
+        "dec": [
+            "Egg Chicken Roll adalah sebuah makanan ala jepang yang terbuat dari daging ayam giling kemudian dibungkus dengan telur dadar dan dimasak dengan metode deep frying ",
+            ""
+        ],
+        "komposisi": "ayam, telur, Bawang Putih, Kecap Asin, Minyak Wijen, Tepung Maizena, Tepung tapioka/sagu, garam, gula pasir, Lada bubuk, telur,  kuning telur, air, tepung maizena, tepung terigu, margarin leleh",
+        "cara_membuat": "goreng Egg Chicken Roll pakai minyak sampai minyak menutupi semua bagian dari Egg Chicken Roll, jika Egg Chicken Roll terlihat cukup matang maka angkat Egg Chicken Roll dan Egg Chicken Roll siap untuk dimakan",
+        "total": null,
+        "minimIsi": 6
     },
     {
         "id": 2,
@@ -23,12 +29,13 @@
             "product/cumi_roll/1.jpg"
         ],
         "hot": false,
-        "price": "Rp 28.000",
-        "discount": "Rp 31.000",
+        "price": 28.000,
+        "discount": 31.000,
         "name": "Cumi Roll",
         "href": "/singel_product",
         "per": "Pcs",
-        "dec": ""
+        "minimIsi": 10,
+        "dec": []
     },
     {
         "id": 3,
@@ -39,12 +46,13 @@
             "product/shrimp_roll/6.jpg"
         ],
         "hot": true,
-        "price": "Rp 28.000",
-        "discount": "Rp 31.000",
+        "price": 28.000,
+        "discount": 31.000,
         "name": "Shrimp Roll",
         "href": "/singel_product",
         "per": "Pcs",
-        "dec": ""
+        "minimIsi": 10,
+        "dec": []
     },
     {
         "id": 4,
@@ -54,12 +62,13 @@
             "product/spicy_chicken/4.jpeg"
         ],
         "hot": true,
-        "price": "Rp 27.000",
-        "discount": "Rp 30.000",
+        "price": 27.000,
+        "discount": 30.000,
         "name": "Spicy Chicken",
         "href": "/singel_product",
         "per": "Pcs",
-        "dec": ""
+        "minimIsi": 10,
+        "dec": []
     },
     {
         "id": 5,
@@ -71,12 +80,13 @@
             "product/egg_kado/5.jpg"
         ],
         "hot": true,
-        "price": "Rp 36.500",
-        "discount": "Rp 39.500",
+        "price": 36.500,
+        "discount": 39.500,
         "name": "Egg Kado",
         "href": "/singel_product",
         "per": "Pcs",
-        "dec": ""
+        "minimIsi": 10,
+        "dec": []
     },
     {
         "id": 6,
@@ -85,12 +95,13 @@
             "product/lumpia_rajungan/2.jpeg"
         ],
         "hot": false,
-        "price": "Rp 27.250",
-        "discount": "Rp 30.250",
+        "price": 27.250,
+        "discount": 30.250,
         "name": "Lumpia Rajungan",
         "href": "/singel_product",
         "per": "Pcs",
-        "dec": ""
+        "minimIsi": 5,
+        "dec": []
     },
     {
         "id": 7,
@@ -101,12 +112,13 @@
             "product/chicken_teba/6.jpg"
         ],
         "hot": false,
-        "price": "Rp 37.250",
-        "discount": "Rp 40.250",
+        "price": 37.250,
+        "discount": 40.250,
         "name": "Chicken Teba",
         "href": "/singel_product",
         "per": "Pcs",
-        "dec": ""
+        "minimIsi": 5,
+        "dec": []
     },
     {
         "id": 8,
@@ -117,12 +129,13 @@
             "product/chicken_katsu/5.jpg"
         ],
         "hot": false,
-        "price": "Rp 53.500",
-        "discount": "Rp 56.500",
+        "price": 53.500,
+        "discount": 56.500,
         "name": "Chicken Katsu",
         "href": "/singel_product",
         "per": "Pcs",
-        "dec": ""
+        "minimIsi": 5,
+        "dec": []
     },
     {
         "id": 9,
@@ -134,11 +147,12 @@
             "product/chicken_karage/5.jpg"
         ],
         "hot": false,
-        "price": "Rp 68.500",
-        "discount": "Rp 71.500",
+        "price": 68.500,
+        "discount": 71.500,
         "name": "Chicken Karage",
         "per": "Gram",
-        "href": "/"
+        "href": "/",
+        "minimIsi": "100 gram"
     },
     {
         "id": 10,
@@ -148,11 +162,12 @@
             "product/chicken-teriyaki/3.jpg"
         ],
         "hot": false,
-        "price": "Rp 98.500",
-        "discount": "Rp 101.500",
+        "price": 98.500,
+        "discount": 101.500,
         "name": "Chicken Teriyaki",
         "per": "Gram",
-        "href": "/"
+        "href": "/",
+        "minimIsi": "100 gram"
     },
     {
         "id": 11,
@@ -164,11 +179,12 @@
             "product/beef_teriyaki/5.jpg"
         ],
         "hot": false,
-        "price": "Rp 123.500",
-        "discount": "Rp 126.500",
+        "price": 123.500,
+        "discount": 126.500,
         "name": "Beef Teriyaki",
         "per": "Gram",
-        "href": "/"
+        "href": "/",
+        "minimIsi": "95 gram"
     },
     {
         "id": 12,
@@ -180,11 +196,12 @@
             "product/ebifuray/5.jpg"
         ],
         "hot": false,
-        "price": "Rp blm ada harganya",
-        "discount": "Rp 101.500",
+        "price": 100.000,
+        "discount": 101.500,
         "name": "Ebifuray",
         "per": "Gram",
-        "href": "/"
+        "href": "/",
+        "minimIsi": "95 gram"
     },
     {
         "id": 13,
@@ -195,25 +212,12 @@
             "product/acar/4.jpg"
         ],
         "hot": false,
-        "price": "Rp 68.500",
-        "discount": "Rp 71.500",
+        "price": 68.500,
+        "discount": 71.500,
         "name": "Acar",
         "per": "Gram",
-        "href": "/"
-    },
-    {
-        "id": 14,
-        "img": [
-            "product/frozen_potatoes/1.jpg",
-            "product/frozen_potatoes/2.jpg",
-            "product/frozen_potatoes/3.jpg"
-        ],
-        "hot": false,
-        "price": "Rp gak ada harga",
-        "discount": "Rp 71.500",
-        "name": "Frozen Potatoes",
-        "per": "Gram",
-        "href": "/"
+        "href": "/",
+        "minimIsi": "1 kg"
     },
     {
         "id": 15,
@@ -224,10 +228,11 @@
             "product/mayones/3.jpg"
         ],
         "hot": false,
-        "price": "Rp 108.500",
-        "discount": "Rp 111.500",
+        "price": 108.500,
+        "discount": 111.500,
         "name": "Mayones",
         "per": "Gram",
-        "href": "/"
+        "href": "/",
+        "minimIsi": "400 gram"
     }
 ]
