@@ -32,7 +32,7 @@ export default function index() {
     }
 
     const { name, dec, img, komposisi, cara_membuat, price } = data
-    // console.log(data)
+    const total =  price * quantity
     return (
         <Layout>
             <div className="product_image_area">
@@ -79,7 +79,7 @@ export default function index() {
                                         <p>Rp {price ? formatPrice(price * quantity) : "00"}</p>
                                     </div>
                                     <div className="add_to_cart" >
-                                        <a href={`https://wa.me/6285212126302?text='Hi,%20Saya%20mau%20pesan%20${name}%20jumlah%20${quantity}%20dengan%20haraga${formatPrice(price) * quantity}`} target="_blank" className="btn_3">Beli</a>
+                                        <a href={`https://wa.me/6285212126302?text='Hi,%20Saya%20mau%20pesan%20${name}%20jumlah%20${quantity}%20dengan%20harga%20${total}`} target="_blank" className="btn_3">Beli</a>
                                     </div>
                                 </div>
                             </div>
