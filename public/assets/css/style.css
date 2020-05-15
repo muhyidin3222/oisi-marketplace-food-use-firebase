@@ -4024,6 +4024,9 @@ input:focus {
   /* width: 100px; */
 }
 
+.wrepper-child-img{
+  display: flex;
+}
 .card-img{
   height: 100px;
   width: 100px;

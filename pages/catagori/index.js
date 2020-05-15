@@ -7,6 +7,7 @@ import Roles from '../../components/roles'
 import SliderArea from '../../components/sliderArea'
 
 export default function index() {
+    
     return (
         <Layout>
             <main>

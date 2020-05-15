@@ -2,6 +2,14 @@ import React from 'react'
 import Link from 'next/link'
 
 export default function cardCatagori({ hot, name, price, discount, href, img, id, minimIsi }) {
+
+    const formatPrice = (value) => {
+        const formatter = new Intl.NumberFormat('IDR', {
+            currency: 'IDR'
+        })
+        return formatter.format(value)
+    }
+
     return (
         <div class="col-xl-4 col-lg-4 col-md-6">
             <div class="single-product mb-60">
@@ -22,14 +30,14 @@ export default function cardCatagori({ hot, name, price, discount, href, img, id
                     <h4>
                         <Link href={href ? `${href}?id=${id}` : "/"}>
                             <div>
-                                <a>{name || ""}</a> <a style={{ marginLeft: 10, color:'red' }}>Isi {minimIsi || ""}</a>
+                                <a>{name || ""}</a> <a style={{ marginLeft: 10, color: 'red' }}>Isi {minimIsi || ""}</a>
                             </div>
                         </Link>
                     </h4>
                     <div class="price">
                         <ul>
-                            <li>Rp {price + ".000" || ""}</li>
-                            {discount ? <li class="discount">Rp {discount + ".000" || ""}</li> : ""}
+                            <li>Rp {discount ? formatPrice(price) : "" }</li>
+                            {discount ? <li class="discount">Rp {discount ? formatPrice(discount) : ""}</li> : ""}
                         </ul>
                     </div>
                     <Link href={href ? `${href}?id=${id}` : "/"}>
