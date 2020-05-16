@@ -15,7 +15,7 @@ class MyDocument extends Document {
           {/* <link rel="shortcut icon" href="../public/assets/img/logo/favicon.png" /> */}
           <link rel="shortcut icon" href="../public/favicon.ico" />
           <script async src="https://www.googletagmanager.com/gtag/js?id=231196761"></script>
-          <script src="./analytics.js"> </script>
+          <script type="text/javascript" src="/analytics.js"> </script>
 
         </head>
         <Head />
