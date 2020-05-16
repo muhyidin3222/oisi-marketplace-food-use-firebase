@@ -14,6 +14,9 @@ class MyDocument extends Document {
           <meta name="viewport" content="initial-scale=1.0, width=device-width" />
           {/* <link rel="shortcut icon" href="../public/assets/img/logo/favicon.png" /> */}
           <link rel="shortcut icon" href="../public/favicon.ico" />
+          <script async src="https://www.googletagmanager.com/gtag/js?id=231196761"></script>
+          <script src="./analytics.js"> </script>
+
         </head>
         <Head />
         <body>
