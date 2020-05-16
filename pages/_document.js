@@ -1,17 +1,9 @@
-import React, { Component } from 'react'
 import Document, { Html, Head, Main, NextScript } from 'next/document'
 
-class MyDocument extends Document, Component {
+class MyDocument extends Document {
   static async getInitialProps(ctx) {
     const initialProps = await Document.getInitialProps(ctx)
     return { ...initialProps }
-  }
-
-  componentDidMount() {
-    window.dataLayer = window.dataLayer || []
-    function gtag() { dataLayer.push(arguments) }
-    gtag('js', new Date())
-    gtag('config', 'TRACKING_ID')
   }
 
   render() {
