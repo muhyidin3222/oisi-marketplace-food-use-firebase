@@ -1,8 +1,19 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Link from 'next/link';
+import { initGA, logPageView } from '../utils/analytics'
+
 // import logol from '/assets/img/home/logo.png'
 
 export default function layout({ children }) {
+    useEffect(() => {
+        if (!window.GA_INITIALIZED) {
+            initGA()
+            window.GA_INITIALIZED = true
+        }
+        logPageView()
+        return () => {
+        }
+    }, [])
     return (
         <div>
             <header>
