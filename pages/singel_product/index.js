@@ -31,8 +31,8 @@ export default function index() {
         return formatter.format(value)
     }
 
-    const { name, dec, img, komposisi, cara_membuat, price } = data
-    const total =  price * quantity
+    const { name, dec, img, komposisi, cara_membuat, price, minimIsi } = data
+    const total = price * quantity
     return (
         <Layout>
             <div className="product_image_area">
@@ -65,7 +65,7 @@ export default function index() {
                                 <p>{komposisi || ""}</p>
                                 <h5>Cara Membuat:</h5>
                                 <p>{cara_membuat || ""}</p>
-                                <h5>Isi 10 pic</h5>
+                                <h5>Isi {minimIsi || ""} pic</h5>
                                 <h5>Harga</h5>
                                 <p>Rp {formatPrice(price) || ""}</p>
                                 <div className="card_area">
