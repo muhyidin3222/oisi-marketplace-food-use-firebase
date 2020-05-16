@@ -6,6 +6,13 @@ class MyDocument extends Document {
     return { ...initialProps }
   }
 
+  componentDidMount() {
+    window.dataLayer = window.dataLayer || []
+    function gtag() { dataLayer.push(arguments) }
+    gtag('js', new Date())
+    gtag('config', 'TRACKING_ID')
+  }
+
   render() {
     return (
       <Html>
@@ -15,7 +22,6 @@ class MyDocument extends Document {
           {/* <link rel="shortcut icon" href="../public/assets/img/logo/favicon.png" /> */}
           <link rel="shortcut icon" href="../public/favicon.ico" />
           <script async src="https://www.googletagmanager.com/gtag/js?id=231196761"></script>
-          <script type="text/javascript" src="/analytics.js"> </script>
 
         </head>
         <Head />
