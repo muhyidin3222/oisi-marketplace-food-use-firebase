@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react'
 import { useRouter } from 'next/router'
-import Link from 'next/link'
 import ls from 'local-storage';
 
 import Layout from '../../components/layout'
@@ -12,10 +11,9 @@ export default function index() {
     const { type } = router.query
     const id = Number(router.query.id)
     const [state, setstate] = useState(0)
-    const [visible, setVisible] = useState(false)
     const [data, setData] = useState({})
     const user = ls.get("user")
-    console.log(user)
+    // console.log(user)
     useEffect(() => {
         if (user) {
             if (type && type === "edit") {
@@ -77,6 +75,7 @@ export default function index() {
         data[nameCheckBox] = data[nameCheckBox] === true || data[nameCheckBox] === false ? !data[nameCheckBox] : true
         setData({ ...data })
     }
+
     return (
         <Layout>
             <div className="product_image_area">

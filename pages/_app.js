@@ -1,5 +1,4 @@
 import React from "react"
-import App from "next/app"
 
 import '../public/css/style.css'
 import "../public/css/bootstrap.min.css"
@@ -13,7 +12,7 @@ import "../public/css/themify-icons.css"
 // import "../public/css/slick.css"
 // import "../public/css/nice-select.css"
 
-export default function({ Component, pageProps }) {
+export default function App ({ Component, pageProps }) {
   return (
     <>
       <Component {...pageProps} />

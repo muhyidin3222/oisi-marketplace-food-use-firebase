@@ -9,10 +9,10 @@
     "start": "next start"
   },
   "dependencies": {
-    "@zeit/next-css": "^1.0.1",
-    "@zeit/next-sass": "^1.0.1",
     "firebase": "^7.14.4",
     "local-storage": "^2.0.0",
+    "@zeit/next-css": "^1.0.1",
+    "@zeit/next-sass": "^1.0.1",
     "next": "9.3.6",
     "next-images": "^1.4.0",
     "prop-types": "^15.7.2",
@@ -22,9 +22,6 @@
     "react-firebaseui": "^4.1.0",
     "react-ga": "^2.7.0"
   },
-  "externals": [
-    "child_process"
-  ],
   "devDependencies": {
     "file-loader": "^6.0.0",
     "url-loader": "^4.1.0"
