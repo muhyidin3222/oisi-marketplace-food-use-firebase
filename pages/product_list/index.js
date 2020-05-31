@@ -6,7 +6,7 @@ export default function index() {
         <Layout>
 
             <div className="slider-area ">
-                <div className="single-slider slider-height2 d-flex align-items-center" data-background="assets/img/hero/category.jpg">
+                <div className="single-slider slider-height2 d-flex align-items-center" data-background="img/hero/category.jpg">
                     <div className="container">
                         <div className="row">
                             <div className="col-xl-12">
@@ -59,7 +59,7 @@ export default function index() {
                                 <div className="row">
                                     <div className="col-lg-6 col-sm-6">
                                         <div className="single_product_item">
-                                            <img src="assets/img/categori/product6.png" alt="" className="img-fluid" />
+                                            <img src="img/categori/product6.png" alt="" className="img-fluid" />
                                             <h3> <a href="single-product.html">Cervical pillow for airplane
                                     car office nap pillow</a> </h3>
                                             <p>From $5</p>
@@ -67,63 +67,63 @@ export default function index() {
                                     </div>
                                     <div className="col-lg-6 col-sm-6">
                                         <div className="single_product_item">
-                                            <img src="assets/img/categori/product2.png" alt="" className="img-fluid" />
+                                            <img src="img/categori/product2.png" alt="" className="img-fluid" />
                                             <h3> <a href="single-product.html">Geometric striped flower home classy decor</a> </h3>
                                             <p>From $5</p>
                                         </div>
                                     </div>
                                     <div className="col-lg-6 col-sm-6">
                                         <div className="single_product_item">
-                                            <img src="assets/img/categori/product5.png" alt="" className="img-fluid" />
+                                            <img src="img/categori/product5.png" alt="" className="img-fluid" />
                                             <h3> <a href="single-product.html">Foam filling cotton slow rebound pillows</a> </h3>
                                             <p>From $5</p>
                                         </div>
                                     </div>
                                     <div className="col-lg-6 col-sm-6">
                                         <div className="single_product_item">
-                                            <img src="assets/img/categori/product6.png" alt="" className="img-fluid" />
+                                            <img src="img/categori/product6.png" alt="" className="img-fluid" />
                                             <h3> <a href="single-product.html">Memory foam filling cotton Slow rebound pillows</a> </h3>
                                             <p>From $5</p>
                                         </div>
                                     </div>
                                     <div className="col-lg-6 col-sm-6">
                                         <div className="single_product_item">
-                                            <img src="assets/img/categori/product1.png" alt="" className="img-fluid" />
+                                            <img src="img/categori/product1.png" alt="" className="img-fluid" />
                                             <h3> <a href="single-product.html">Memory foam filling cotton Slow rebound pillows</a> </h3>
                                             <p>From $5</p>
                                         </div>
                                     </div>
                                     <div className="col-lg-6 col-sm-6">
                                         <div className="single_product_item">
-                                            <img src="assets/img/categori/product4.png" alt="" className="img-fluid" />
+                                            <img src="img/categori/product4.png" alt="" className="img-fluid" />
                                             <h3> <a href="single-product.html">Sleeping orthopedic sciatica Back Hip Joint Pain relief</a> </h3>
                                             <p>From $5</p>
                                         </div>
                                     </div>
                                     <div className="col-lg-6 col-sm-6">
                                         <div className="single_product_item">
-                                            <img src="assets/img/categori/product5.png" alt="" className="img-fluid" />
+                                            <img src="img/categori/product5.png" alt="" className="img-fluid" />
                                             <h3> <a href="single-product.html">Memory foam filling cotton Slow rebound pillows</a> </h3>
                                             <p>From $5</p>
                                         </div>
                                     </div>
                                     <div className="col-lg-6 col-sm-6">
                                         <div className="single_product_item">
-                                            <img src="assets/img/categori/product3.png" alt="" className="img-fluid" />
+                                            <img src="img/categori/product3.png" alt="" className="img-fluid" />
                                             <h3> <a href="single-product.html">Sleeping orthopedic sciatica Back Hip Joint Pain relief</a> </h3>
                                             <p>From $5</p>
                                         </div>
                                     </div>
                                     <div className="col-lg-6 col-sm-6">
                                         <div className="single_product_item">
-                                            <img src="assets/img/categori/product2.png" alt="" className="img-fluid" />
+                                            <img src="img/categori/product2.png" alt="" className="img-fluid" />
                                             <h3> <a href="single-product.html">Geometric striped flower home classy decor</a> </h3>
                                             <p>From $5</p>
                                         </div>
                                     </div>
                                     <div className="col-lg-6 col-sm-6">
                                         <div className="single_product_item">
-                                            <img src="assets/img/categori/product1.png" alt="" className="img-fluid" />
+                                            <img src="img/categori/product1.png" alt="" className="img-fluid" />
                                             <h3> <a href="single-product.html">Geometric striped flower home classy decor</a> </h3>
                                             <p>From $5</p>
                                         </div>
@@ -145,21 +145,21 @@ export default function index() {
                             <div className="client_review_slider owl-carousel">
                                 <div className="single_client_review">
                                     <div className="client_img">
-                                        <img src="assets/img/client.png" alt="#" />
+                                        <img src="img/client.png" alt="#" />
                                     </div>
                                     <p>"Working in conjunction with humanitarian aid agencies, we have supported programmes to help alleviate human suffering.</p>
                                     <h5>- Micky Mouse</h5>
                                 </div>
                                 <div className="single_client_review">
                                     <div className="client_img">
-                                        <img src="assets/img/client_1.png" alt="#" />
+                                        <img src="img/client_1.png" alt="#" />
                                     </div>
                                     <p>"Working in conjunction with humanitarian aid agencies, we have supported programmes to help alleviate human suffering.</p>
                                     <h5>- Micky Mouse</h5>
                                 </div>
                                 <div className="single_client_review">
                                     <div className="client_img">
-                                        <img src="assets/img/client_2.png" alt="#" />
+                                        <img src="img/client_2.png" alt="#" />
                                     </div>
                                     <p>"Working in conjunction with humanitarian aid agencies, we have supported programmes to help alleviate human suffering.</p>
                                     <h5>- Micky Mouse</h5>

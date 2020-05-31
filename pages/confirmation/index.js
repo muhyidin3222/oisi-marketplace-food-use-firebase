@@ -5,7 +5,7 @@ export default function index() {
     return (
         <Layout>
             <div className="slider-area ">
-                <div className="single-slider slider-height2 d-flex align-items-center" data-background="assets/img/hero/category.jpg">
+                <div className="single-slider slider-height2 d-flex align-items-center" data-background="img/hero/category.jpg">
                     <div className="container">
                         <div className="row">
                             <div className="col-xl-12">

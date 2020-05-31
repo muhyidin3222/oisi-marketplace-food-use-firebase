@@ -5,7 +5,7 @@ export default function index() {
     return (
         <Layout>
             <div className="slider-area ">
-                <div className="single-slider slider-height2 d-flex align-items-center" data-background="assets/img/hero/category.jpg">
+                <div className="single-slider slider-height2 d-flex align-items-center" data-background="img/hero/category.jpg">
                     <div className="container">
                         <div className="row">
                             <div className="col-xl-12">
@@ -36,7 +36,7 @@ export default function index() {
                                         <td>
                                             <div className="media">
                                                 <div className="d-flex">
-                                                    <img src="assets/img/arrivel/arrivel_1.png" alt="" />
+                                                    <img src="img/arrivel/arrivel_1.png" alt="" />
                                                 </div>
                                                 <div className="media-body">
                                                     <p>Minimalistic shop for multipurpose use</p>
@@ -70,7 +70,7 @@ export default function index() {
                                         <td>
                                             <div className="media">
                                                 <div className="d-flex">
-                                                    <img src="assets/img/arrivel/arrivel_2.png" alt="" />
+                                                    <img src="img/arrivel/arrivel_2.png" alt="" />
                                                 </div>
                                                 <div className="media-body">
                                                     <p>Minimalistic shop for multipurpose use</p>

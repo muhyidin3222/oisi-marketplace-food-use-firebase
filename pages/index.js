@@ -2,7 +2,8 @@ import React from 'react'
 import Layout from '../components/layout'
 import Link from 'next/link'
 import Roles from '../components/roles'
-import Step from '../components/step'
+// import Step from '../components/step'
+import firebase from '../components/config/firebase'
 
 // import dynamic from 'next/dynamic';
 
@@ -12,7 +13,7 @@ import Step from '../components/step'
 //       <div className="preloader-inner position-relative">
 //         <div className="preloader-circle"></div>
 //         <div className="preloader-img pere-text">
-//           <img src="/assets/img/logo/logo.png" alt="" />
+//           <img src="/img/logo/logo.png" alt="" />
 //         </div>
 //       </div>
 //     </div>
@@ -21,17 +22,16 @@ import Step from '../components/step'
 
 export default function index() {
   return (
-    <Layout>
+    < Layout >
       <main>
-        {/* <DynamicComponentWithCustomLoading /> */}
-        <div className="slider-area ">
+        <div className="components-layout-demo-top-side-2 slider-area">
           <div className="slider-active">
-            <div className="single-slider slider-height" data-background="assets/img/hero/h1_hero.jpg">
+            <div className="single-slider slider-height" data-background="/img/hero/h1_hero.jpg">
               <div className="container">
                 <div className="row d-flex align-items-center justify-content-between">
                   <div className="col-xl-6 col-lg-7 col-md-12 col-sm-12 d-md-block">
                     <div className="hero__img" data-animation="bounceIn" data-delay=".4s">
-                      <img src="/assets/img/home/1.jpg" alt="" className="img-kelebihan" />
+                      <img src="/img/home/1.jpg" alt="" className="img-kelebihan" />
                     </div>
                   </div>
                   <div className="col-xl-5 col-lg-4 col-md-12 col-sm-12">
@@ -85,7 +85,7 @@ export default function index() {
                 <div className="row d-flex align-items-center justify-content-between">
                   <div className="col-xl-6 col-lg-6 col-md-12 col-sm-12 d-md-block">
                     <div className="hero__img" data-animation="bounceIn" data-delay=".4s">
-                      <img src="/assets/img/home/hero_man3.jpg" className="img-kelebihan" alt="" />
+                      <img src="/img/home/hero_man3.jpg" className="img-kelebihan" alt="" />
                     </div>
                   </div>
                   <div className="col-xl-5 col-lg-5 col-md-12 col-sm-12">
@@ -172,7 +172,7 @@ export default function index() {
               <div className="col-xl-4 col-lg-6">
                 <div className="single-category mb-30">
                   <div className="category-img">
-                    <img src="/assets/img/product/spicy_chicken/1.jpeg" alt="" />
+                    <img src="/img/product/spicy_chicken/1.jpeg" alt="" />
                     <div className="category-caption">
                       <h2>Spicy Chicken</h2>
                       <span className="best"><a href="#">Beli</a></span>
@@ -184,7 +184,7 @@ export default function index() {
               <div className="col-xl-4 col-lg-6">
                 <div className="single-category mb-30">
                   <div className="category-img">
-                    <img src="/assets/img/product/egg_chicken_roll/6.jpg" alt="" />
+                    <img src="/img/product/egg_chicken_roll/6.jpg" alt="" />
                     <div className="category-caption">
                       <h2>Egg Chicken Roll</h2>
                       <span className="best"><a href="#">Beli</a></span>
@@ -196,7 +196,7 @@ export default function index() {
               <div className="col-xl-4 col-lg-6">
                 <div className="single-category mb-30">
                   <div className="category-img">
-                    <img src="/assets/img/product/shrimp_roll/1.jpg" alt="" />
+                    <img src="/img/product/shrimp_roll/1.jpg" alt="" />
                     <div className="category-caption">
                       <h2>Shrimp Roll</h2>
                       <span className="best"><a href="#">Beli</a></span>
@@ -224,6 +224,6 @@ export default function index() {
 
         <Roles />
       </main>
-    </Layout>
+    </Layout >
   )
 }

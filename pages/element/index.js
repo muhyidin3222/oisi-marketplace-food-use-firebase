@@ -5,7 +5,7 @@ export default function index() {
     return (
         <Layout>
             <div className="slider-area ">
-                <div className="single-slider slider-height2 d-flex align-items-center" data-background="assets/img/hero/category.jpg">
+                <div className="single-slider slider-height2 d-flex align-items-center" data-background="img/hero/category.jpg">
                     <div className="container">
                         <div className="row">
                             <div className="col-xl-12">
@@ -152,7 +152,7 @@ export default function index() {
                         <h3 className="mb-30">Left Aligned</h3>
                         <div className="row">
                             <div className="col-md-3">
-                                <img src="assets/img/elements/d.jpg" alt="" className="img-fluid" />
+                                <img src="img/elements/d.jpg" alt="" className="img-fluid" />
                             </div>
                             <div className="col-md-9 mt-sm-20">
                                 <p>Recently, the US Federal government banned online casinos from operating in America by making
@@ -195,7 +195,7 @@ export default function index() {
 							talk a little about what symptoms</p>
                             </div>
                             <div className="col-md-3">
-                                <img src="assets/img/elements/d.jpg" alt="" className="img-fluid" />
+                                <img src="img/elements/d.jpg" alt="" className="img-fluid" />
                             </div>
                         </div>
                     </div>
@@ -270,7 +270,7 @@ export default function index() {
                                 </div>
                                 <div className="table-row">
                                     <div className="serial">01</div>
-                                    <div className="country"> <img src="assets/img/elements/f1.jpg" alt="flag" />Canada</div>
+                                    <div className="country"> <img src="img/elements/f1.jpg" alt="flag" />Canada</div>
                                     <div className="visit">645032</div>
                                     <div className="percentage">
                                         <div className="progress">
@@ -281,7 +281,7 @@ export default function index() {
                                 </div>
                                 <div className="table-row">
                                     <div className="serial">02</div>
-                                    <div className="country"> <img src="assets/img/elements/f2.jpg" alt="flag" />Canada</div>
+                                    <div className="country"> <img src="img/elements/f2.jpg" alt="flag" />Canada</div>
                                     <div className="visit">645032</div>
                                     <div className="percentage">
                                         <div className="progress">
@@ -292,7 +292,7 @@ export default function index() {
                                 </div>
                                 <div className="table-row">
                                     <div className="serial">03</div>
-                                    <div className="country"> <img src="assets/img/elements/f3.jpg" alt="flag" />Canada</div>
+                                    <div className="country"> <img src="img/elements/f3.jpg" alt="flag" />Canada</div>
                                     <div className="visit">645032</div>
                                     <div className="percentage">
                                         <div className="progress">
@@ -303,7 +303,7 @@ export default function index() {
                                 </div>
                                 <div className="table-row">
                                     <div className="serial">04</div>
-                                    <div className="country"> <img src="assets/img/elements/f4.jpg" alt="flag" />Canada</div>
+                                    <div className="country"> <img src="img/elements/f4.jpg" alt="flag" />Canada</div>
                                     <div className="visit">645032</div>
                                     <div className="percentage">
                                         <div className="progress">
@@ -314,7 +314,7 @@ export default function index() {
                                 </div>
                                 <div className="table-row">
                                     <div className="serial">05</div>
-                                    <div className="country"> <img src="assets/img/elements/f5.jpg" alt="flag" />Canada</div>
+                                    <div className="country"> <img src="img/elements/f5.jpg" alt="flag" />Canada</div>
                                     <div className="visit">645032</div>
                                     <div className="percentage">
                                         <div className="progress">
@@ -325,7 +325,7 @@ export default function index() {
                                 </div>
                                 <div className="table-row">
                                     <div className="serial">06</div>
-                                    <div className="country"> <img src="assets/img/elements/f6.jpg" alt="flag" />Canada</div>
+                                    <div className="country"> <img src="img/elements/f6.jpg" alt="flag" />Canada</div>
                                     <div className="visit">645032</div>
                                     <div className="percentage">
                                         <div className="progress">
@@ -336,7 +336,7 @@ export default function index() {
                                 </div>
                                 <div className="table-row">
                                     <div className="serial">07</div>
-                                    <div className="country"> <img src="assets/img/elements/f7.jpg" alt="flag" />Canada</div>
+                                    <div className="country"> <img src="img/elements/f7.jpg" alt="flag" />Canada</div>
                                     <div className="visit">645032</div>
                                     <div className="percentage">
                                         <div className="progress">
@@ -347,7 +347,7 @@ export default function index() {
                                 </div>
                                 <div className="table-row">
                                     <div className="serial">08</div>
-                                    <div className="country"> <img src="assets/img/elements/f8.jpg" alt="flag" />Canada</div>
+                                    <div className="country"> <img src="img/elements/f8.jpg" alt="flag" />Canada</div>
                                     <div className="visit">645032</div>
                                     <div className="percentage">
                                         <div className="progress">
@@ -363,43 +363,43 @@ export default function index() {
                         <h3>Image Gallery</h3>
                         <div className="row gallery-item">
                             <div className="col-md-4">
-                                <a href="assets/img/elements/g1.jpg" className="img-pop-up">
-                                    {/* <div className="single-gallery-image" style={{background: url("assets/img/elements/g1.jpg")}}></div> */}
+                                <a href="img/elements/g1.jpg" className="img-pop-up">
+                                    {/* <div className="single-gallery-image" style={{background: url("img/elements/g1.jpg")}}></div> */}
                                 </a>
                             </div>
                             <div className="col-md-4">
-                                <a href="assets/img/elements/g2.jpg" className="img-pop-up">
-                                    {/* <div className="single-gallery-image" style={{background: url("assets/img/elements/g2.jpg")}}></div> */}
+                                <a href="img/elements/g2.jpg" className="img-pop-up">
+                                    {/* <div className="single-gallery-image" style={{background: url("img/elements/g2.jpg")}}></div> */}
                                 </a>
                             </div>
                             <div className="col-md-4">
-                                <a href="assets/img/elements/g3.jpg" className="img-pop-up">
-                                    {/* <div className="single-gallery-image" style={{background: url("assets/img/elements/g3.jpg")}}></div> */}
+                                <a href="img/elements/g3.jpg" className="img-pop-up">
+                                    {/* <div className="single-gallery-image" style={{background: url("img/elements/g3.jpg")}}></div> */}
                                 </a>
                             </div>
                             <div className="col-md-6">
-                                <a href="assets/img/elements/g4.jpg" className="img-pop-up">
-                                    {/* <div className="single-gallery-image" style={{background: url("assets/img/elements/g4.jpg")}}></div> */}
+                                <a href="img/elements/g4.jpg" className="img-pop-up">
+                                    {/* <div className="single-gallery-image" style={{background: url("img/elements/g4.jpg")}}></div> */}
                                 </a>
                             </div>
                             <div className="col-md-6">
-                                <a href="assets/img/elements/g5.jpg" className="img-pop-up">
-                                    {/* <div className="single-gallery-image" style={{background: url("assets/img/elements/g5.jpg")}}></div> */}
+                                <a href="img/elements/g5.jpg" className="img-pop-up">
+                                    {/* <div className="single-gallery-image" style={{background: url("img/elements/g5.jpg")}}></div> */}
                                 </a>
                             </div>
                             <div className="col-md-4">
-                                <a href="assets/img/elements/g6.jpg" className="img-pop-up">
-                                    {/* <div className="single-gallery-image" style={{background: url("assets/img/elements/g6.jpg")}}></div> */}
+                                <a href="img/elements/g6.jpg" className="img-pop-up">
+                                    {/* <div className="single-gallery-image" style={{background: url("img/elements/g6.jpg")}}></div> */}
                                 </a>
                             </div>
                             <div className="col-md-4">
-                                <a href="assets/img/elements/g7.jpg" className="img-pop-up">
-                                    {/* <div className="single-gallery-image" style={{background: url("assets/img/elements/g7.jpg")}}></div> */}
+                                <a href="img/elements/g7.jpg" className="img-pop-up">
+                                    {/* <div className="single-gallery-image" style={{background: url("img/elements/g7.jpg")}}></div> */}
                                 </a>
                             </div>
                             <div className="col-md-4">
-                                <a href="assets/img/elements/g8.jpg" className="img-pop-up">
-                                    {/* <div className="single-gallery-image" style={{background: url("assets/img/elements/g8.jpg")}}></div> */}
+                                <a href="img/elements/g8.jpg" className="img-pop-up">
+                                    {/* <div className="single-gallery-image" style={{background: url("img/elements/g8.jpg")}}></div> */}
                                 </a>
                             </div>
                         </div>

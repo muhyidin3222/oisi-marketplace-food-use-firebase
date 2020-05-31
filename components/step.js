@@ -8,19 +8,19 @@ export default class step extends Component {
                     <div className="container-fluid">
                         <div className="row">
                             <div className="gallery-items">
-                                <img src="/assets/img/pesan.jpg" alt="" />
+                                <img src="/img/pesan.jpg" alt="" />
                             </div>
                             <div className="gallery-items">
-                                <img src="/assets/img/delivery.jpg" alt="" />
+                                <img src="/img/delivery.jpg" alt="" />
                             </div>
                             <div className="gallery-items">
-                                <img src="/assets/img/in_home.jpg" alt="" />
+                                <img src="/img/in_home.jpg" alt="" />
                             </div>
                             <div className="gallery-items">
-                                <img src="/assets/img/goreng.jpeg" alt="" />
+                                <img src="/img/goreng.jpeg" alt="" />
                             </div>
                             <div className="gallery-items">
-                                <img src="/assets/img/eat_food.jpg" alt="" />
+                                <img src="/img/eat_food.jpg" alt="" />
                             </div>
                         </div>
                     </div>

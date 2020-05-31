@@ -1,28 +1,51 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
+import { useRouter } from 'next/router'
+import ls from 'local-storage';
 
 import Layout from '../../components/layout'
 import CardCatagori from '../../components/cardCatagori'
-import data from '../../components/dataCategori.json'
 import Roles from '../../components/roles'
 import SliderArea from '../../components/sliderArea'
+import firebase from '../../components/config/firebase'
 
 export default function index() {
-    
+    const router = useRouter()
+    const user = ls.get("user")
+    const [data, setData] = useState([])
+    const [emty, setEmty] = useState(true)
+
+    useEffect(() => {
+        if (user) {
+            const token = JSON.parse(user).stsTokenManager.accessToken
+            if (!token) {
+                router.push("/login")
+            }
+        }
+
+        firebase.database().ref('produk').on("value", function (snapshot) {
+            setData(Object.values(snapshot.val()))
+            setEmty(false)
+        }, function (errorObject) {
+            setEmty(false)
+            console.log("The read failed: " + errorObject.code);
+        });
+    }, [])
+    // console.log('asdfasfd data', Object.values(data)) 
     return (
         <Layout>
             <main>
-
                 <SliderArea title="Daftar Produk" />
-
                 <section className="latest-product-area latest-padding">
                     <div className="container">
                         <div className="tab-content" id="nav-tabContent">
                             <div className="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
-                                <div className="row">
+                                <div className="row justify-content-center">
                                     {
-                                        data.map((value, index) => (
-                                            <CardCatagori {...value} key={index} />
-                                        ))
+                                        !emty ? Object.keys(data).map((obj, index) => (
+                                            <CardCatagori {...data[obj]} key={index} type="clien" index={index} obj={obj} />
+                                        )) : <div className="spinner-border text-success" role="status">
+                                                <span className="sr-only">Loading...</span>
+                                            </div>
                                     }
                                 </div>
                             </div>
@@ -32,7 +55,7 @@ export default function index() {
                 <Roles />
 
                 {/* <div className="latest-wrapper lf-padding">
-                    <div className="latest-area latest-height d-flex align-items-center" data-background="assets/img/collection/latest-offer.png">
+                    <div className="latest-area latest-height d-flex align-items-center" data-background="img/collection/latest-offer.png">
                         <div className="container">
                             <div className="row d-flex align-items-center">
                                 <div className="col-xl-5 col-lg-5 col-md-6 offset-xl-1 offset-lg-1">
@@ -52,7 +75,7 @@ export default function index() {
                             </div>
                         </div>
                         <div className="man-shape">
-                            <img src="assets/img/collection/latest-man.png" alt="" />
+                            <img src="img/collection/latest-man.png" alt="" />
                         </div>
                     </div>
                 </div> */}

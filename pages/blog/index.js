@@ -5,7 +5,7 @@ export default function index() {
     return (
         <Layout>
             <div className="slider-area ">
-                <div className="single-slider slider-height2 d-flex align-items-center" data-background="assets/img/hero/category.jpg">
+                <div className="single-slider slider-height2 d-flex align-items-center" data-background="img/hero/category.jpg">
                     <div className="container">
                         <div className="row">
                             <div className="col-xl-12">
@@ -25,7 +25,7 @@ export default function index() {
                             <div className="blog_left_sidebar">
                                 <article className="blog_item">
                                     <div className="blog_item_img">
-                                        <img className="card-img rounded-0" src="assets/img/blog/single_blog_1.png" alt="" />
+                                        <img className="card-img rounded-0" src="img/blog/single_blog_1.png" alt="" />
                                         <a href="#" className="blog_item_date">
                                             <h3>15</h3>
                                             <p>Jan</p>
@@ -47,7 +47,7 @@ export default function index() {
 
                                 <article className="blog_item">
                                     <div className="blog_item_img">
-                                        <img className="card-img rounded-0" src="assets/img/blog/single_blog_2.png" alt="" />
+                                        <img className="card-img rounded-0" src="img/blog/single_blog_2.png" alt="" />
                                         <a href="#" className="blog_item_date">
                                             <h3>15</h3>
                                             <p>Jan</p>
@@ -69,7 +69,7 @@ export default function index() {
 
                                 <article className="blog_item">
                                     <div className="blog_item_img">
-                                        <img className="card-img rounded-0" src="assets/img/blog/single_blog_3.png" alt="" />
+                                        <img className="card-img rounded-0" src="img/blog/single_blog_3.png" alt="" />
                                         <a href="#" className="blog_item_date">
                                             <h3>15</h3>
                                             <p>Jan</p>
@@ -91,7 +91,7 @@ export default function index() {
 
                                 <article className="blog_item">
                                     <div className="blog_item_img">
-                                        <img className="card-img rounded-0" src="assets/img/blog/single_blog_4.png" alt="" />
+                                        <img className="card-img rounded-0" src="img/blog/single_blog_4.png" alt="" />
                                         <a href="#" className="blog_item_date">
                                             <h3>15</h3>
                                             <p>Jan</p>
@@ -113,7 +113,7 @@ export default function index() {
 
                                 <article className="blog_item">
                                     <div className="blog_item_img">
-                                        <img className="card-img rounded-0" src="assets/img/blog/single_blog_5.png" alt="" />
+                                        <img className="card-img rounded-0" src="img/blog/single_blog_5.png" alt="" />
                                         <a href="#" className="blog_item_date">
                                             <h3>15</h3>
                                             <p>Jan</p>
@@ -219,7 +219,7 @@ export default function index() {
                                 <aside className="single_sidebar_widget popular_post_widget">
                                     <h3 className="widget_title">Recent Post</h3>
                                     <div className="media post_item">
-                                        <img src="assets/img/post/post_1.png" alt="post" />
+                                        <img src="img/post/post_1.png" alt="post" />
                                         <div className="media-body">
                                             <a href="single-blog.html">
                                                 <h3>From life was you fish...</h3>
@@ -228,7 +228,7 @@ export default function index() {
                                         </div>
                                     </div>
                                     <div className="media post_item">
-                                        <img src="assets/img/post/post_2.png" alt="post" />
+                                        <img src="img/post/post_2.png" alt="post" />
                                         <div className="media-body">
                                             <a href="single-blog.html">
                                                 <h3>The Amazing Hubble</h3>
@@ -237,7 +237,7 @@ export default function index() {
                                         </div>
                                     </div>
                                     <div className="media post_item">
-                                        <img src="assets/img/post/post_3.png" alt="post" />
+                                        <img src="img/post/post_3.png" alt="post" />
                                         <div className="media-body">
                                             <a href="single-blog.html">
                                                 <h3>Astronomy Or Astrology</h3>
@@ -246,7 +246,7 @@ export default function index() {
                                         </div>
                                     </div>
                                     <div className="media post_item">
-                                        <img src="assets/img/post/post_4.png" alt="post" />
+                                        <img src="img/post/post_4.png" alt="post" />
                                         <div className="media-body">
                                             <a href="single-blog.html">
                                                 <h3>Asteroids telescope</h3>
@@ -291,32 +291,32 @@ export default function index() {
                                     <ul className="instagram_row flex-wrap">
                                         <li>
                                             <a href="#">
-                                                <img className="img-fluid" src="assets/img/post/post_5.png" alt="" />
+                                                <img className="img-fluid" src="img/post/post_5.png" alt="" />
                                             </a>
                                         </li>
                                         <li>
                                             <a href="#">
-                                                <img className="img-fluid" src="assets/img/post/post_6.png" alt="" />
+                                                <img className="img-fluid" src="img/post/post_6.png" alt="" />
                                             </a>
                                         </li>
                                         <li>
                                             <a href="#">
-                                                <img className="img-fluid" src="assets/img/post/post_7.png" alt="" />
+                                                <img className="img-fluid" src="img/post/post_7.png" alt="" />
                                             </a>
                                         </li>
                                         <li>
                                             <a href="#">
-                                                <img className="img-fluid" src="assets/img/post/post_8.png" alt="" />
+                                                <img className="img-fluid" src="img/post/post_8.png" alt="" />
                                             </a>
                                         </li>
                                         <li>
                                             <a href="#">
-                                                <img className="img-fluid" src="assets/img/post/post_9.png" alt="" />
+                                                <img className="img-fluid" src="img/post/post_9.png" alt="" />
                                             </a>
                                         </li>
                                         <li>
                                             <a href="#">
-                                                <img className="img-fluid" src="assets/img/post/post_10.png" alt="" />
+                                                <img className="img-fluid" src="img/post/post_10.png" alt="" />
                                             </a>
                                         </li>
                                     </ul>
