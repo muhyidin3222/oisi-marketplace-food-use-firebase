@@ -13,22 +13,23 @@ export default function index() {
     const user = ls.get("user")
     const [data, setData] = useState([])
     const [emty, setEmty] = useState(true)
+    console.log(user)
 
     useEffect(() => {
         if (user) {
-            const token = JSON.parse(user).stsTokenManager.accessToken
-            if (!token) {
+            firebase.database().ref('produk').on("value", function (snapshot) {
+                setData(snapshot.val())
+                setEmty(false)
+            }, function (errorObject) {
+                setEmty(false)
+                console.log("The read failed: " + errorObject.code);
+            });
+        } else {
+            // const token = JSON.parse(user).stsTokenManager.accessToken
+            // if (!token) {
                 router.push("/login")
-            }
+            // }
         }
-
-        firebase.database().ref('produk').on("value", function (snapshot) {
-            setData(snapshot.val())
-            setEmty(false)
-        }, function (errorObject) {
-            setEmty(false)
-            console.log("The read failed: " + errorObject.code);
-        });
     }, [])
     // console.log(data)
     // , id: data.length + 1

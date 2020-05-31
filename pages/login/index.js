@@ -5,6 +5,16 @@ import { useRouter } from 'next/router'
 import Layout from '../../components/layout'
 import firebase from '../../components/config/firebase'
 
+
+// "devDependencies": {
+//     "babel-plugin-import": "^1.13.0",
+//     "css-loader": "^3.5.3",
+//     "file-loader": "^6.0.0",
+//     "next-compose-plugins": "^2.2.0",
+//     "style-loader": "^1.2.1",
+//     "url-loader": "^4.1.0"
+//   },
+
 export default function index() {
     const router = useRouter()
     const [user, setUser] = useState({})
@@ -13,19 +23,26 @@ export default function index() {
         user[val.target.name] = val.target.value
         setUser({ ...user })
     }
+    const { email, password } = user
+
     const onSubmit = async (e) => {
         e.preventDefault()
-        console.log(user)
-        firebase
-            .auth()
-            .signInWithEmailAndPassword("muhyidin480@gmail.com", "lupapassword")
-            .then(res => {
-                if (res.user) {
-                    ls.set("user", JSON.stringify(res.user))
-                    router.push("/admin")
-                }
-            })
-            .catch(res => console.log(res))
+        if (email === "testes3222@gmail.com" && password === "muhyidin123") {
+            // console.log(user)
+            firebase
+                .auth()
+                .signInWithEmailAndPassword(user.email,user.password)
+                .then(res => {
+                    // console.log(res)
+                    if (res) {
+                        ls.set("user", JSON.stringify(res.user))
+                        router.push("/admin")
+                    }
+                })
+                .catch(res => console.log(res))
+        } else {
+            M.toast({ html: `ERROR LOGIN` })
+        }
     }
     return (
         <Layout>

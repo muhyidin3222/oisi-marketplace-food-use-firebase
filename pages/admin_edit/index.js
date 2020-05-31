@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { useRouter } from 'next/router'
 import Link from 'next/link'
+import ls from 'local-storage';
 
 import Layout from '../../components/layout'
 import dataCategori from '../../components/dataCategori'
@@ -13,15 +14,23 @@ export default function index() {
     const [state, setstate] = useState(0)
     const [visible, setVisible] = useState(false)
     const [data, setData] = useState({})
-
+    const user = ls.get("user")
+    console.log(user)
     useEffect(() => {
-        if (type && type === "edit") {
-            firebase.database().ref(`produk/${id}`).on("value", function (snapshot) {
-                setData(snapshot.val())
-                // console.log(snapshot.val())
-            }, function (errorObject) {
-                console.log("The read failed: " + errorObject.code);
-            });
+        if (user) {
+            if (type && type === "edit") {
+                firebase.database().ref(`produk/${id}`).on("value", function (snapshot) {
+                    setData(snapshot.val())
+                    // console.log(snapshot.val())
+                }, function (errorObject) {
+                    console.log("The read failed: " + errorObject.code);
+                });
+            }
+        } else {
+            // const token = JSON.parse(user).stsTokenManager.accessToken
+            // if (!token) {
+            router.push("/login")
+            // }
         }
     }, [])
     // console.log(type, id, type, id)
