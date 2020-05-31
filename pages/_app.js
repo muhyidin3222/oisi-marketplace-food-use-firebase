@@ -13,7 +13,7 @@ import "../public/css/themify-icons.css"
 // import "../public/css/slick.css"
 // import "../public/css/nice-select.css"
 
-export default function App({ Component, pageProps }) {
+export default function({ Component, pageProps }) {
   return (
     <>
       <Component {...pageProps} />
