@@ -3,7 +3,7 @@ import Link from 'next/link'
 import firebase from './config/firebase'
 import data from './dataCategori'
 
-export default function cardCatagori({ hot, name, price, discount, minimIsi, type, index, available, obj }) {
+export default function cardCatagori({ hot, name, price, discount, minim_isi, type, index, available, obj }) {
     const formatPrice = (value) => {
         const formatter = new Intl.NumberFormat('IDR', {
             currency: 'IDR'
@@ -36,7 +36,7 @@ export default function cardCatagori({ hot, name, price, discount, minimIsi, typ
                 <div className="product-caption">
                     <h4>
                         <div>
-                            <a>{name || ""}</a> <a style={{ marginLeft: 10, color: 'red' }}>Isi {minimIsi || ""}</a>
+                            <a>{name || ""}</a> <a style={{ marginLeft: 10, color: 'red' }}>Isi {minim_isi || ""}</a>
                         </div>
                     </h4>
                     <div className="price">
